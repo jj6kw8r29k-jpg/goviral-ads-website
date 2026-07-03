@@ -176,6 +176,16 @@
             msg.textContent = "✓ Received. We'll get back to you within one business day.";
             msg.className = "form-msg is-ok";
           }
+          if (typeof gtag === "function") {
+            gtag("event", "conversion", {
+              send_to: "AW-17583065677/iq46CIjZhZ4bEM2UocBB",
+              value: 1.0,
+              currency: "INR"
+            });
+          }
+          if (typeof rdt === "function") {
+            rdt("track", "SignUp");
+          }
         })
         .catch(function () {
           if (msg) {
