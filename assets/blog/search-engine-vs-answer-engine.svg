@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<line x1="400" y1="30" x2="400" y2="420" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.35"/>
+<text x="200" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#7A7A78">SEARCH ENGINE · 10 LINKS</text>
+<text x="600" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">ANSWER ENGINE · ONE ANSWER</text>
+<g stroke="#0C0C0C" stroke-width="1.5">
+<rect x="80" y="90" width="240" height="34" rx="8" fill="#FFFFFF"/><rect x="80" y="136" width="240" height="34" rx="8" fill="#FFFFFF"/><rect x="80" y="182" width="240" height="34" rx="8" fill="#FFFFFF"/><rect x="80" y="228" width="240" height="34" rx="8" fill="#FFFFFF"/><rect x="80" y="274" width="240" height="34" rx="8" fill="#FFFFFF"/><rect x="80" y="320" width="240" height="34" rx="8" fill="#FFFFFF"/>
+</g>
+<g fill="#7A7A78"><rect x="96" y="102" width="150" height="9" rx="4"/><rect x="96" y="148" width="170" height="9" rx="4"/><rect x="96" y="194" width="140" height="9" rx="4"/><rect x="96" y="240" width="180" height="9" rx="4"/><rect x="96" y="286" width="150" height="9" rx="4"/><rect x="96" y="332" width="165" height="9" rx="4"/></g>
+<text x="200" y="396" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">USERS PICK. YOU COMPETE FOR CLICKS.</text>
+<rect x="460" y="100" width="280" height="190" rx="16" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="2"/>
+<g fill="#7A7A78"><rect x="482" y="128" width="230" height="10" rx="5"/><rect x="482" y="152" width="200" height="10" rx="5"/><rect x="482" y="176" width="220" height="10" rx="5"/><rect x="482" y="200" width="150" height="10" rx="5"/></g>
+<rect x="482" y="232" width="200" height="36" rx="18" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="582.0" y="254.32" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">YOUR BRAND CITED ✓</text>
+<text x="600" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">AI PICKS. YOU COMPETE TO BE</text>
+<text x="600" y="350" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">THE SOURCE OF THE ANSWER.</text>
+</svg>

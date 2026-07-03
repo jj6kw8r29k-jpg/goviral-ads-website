@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="50" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">THE CREATIVE TESTING LOOP META REWARDS</text>
+<circle cx="180" cy="240" r="62" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="2"/><text x="180" y="247" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">TEST</text>
+<circle cx="400" cy="240" r="62" fill="#FFC400" stroke="#0C0C0C" stroke-width="2"/><text x="400" y="247" text-anchor="middle" font-size="17" font-weight="700" fill="#0C0C0C">LEARN</text>
+<circle cx="620" cy="240" r="62" fill="#00C853" stroke="#0C0C0C" stroke-width="2"/><text x="620" y="247" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">SCALE</text>
+<g stroke="#0C0C0C" stroke-width="3" fill="none">
+<path d="M244,240 L336,240"/><path d="M336,240 l-14,-8 l0,16 Z" fill="#0C0C0C"/>
+<path d="M464,240 L556,240"/><path d="M556,240 l-14,-8 l0,16 Z" fill="#0C0C0C"/>
+<path d="M620,304 C620,380 180,380 180,304"/><path d="M180,304 l-8,14 l16,0 Z" fill="#0C0C0C"/>
+</g>
+<text x="400" y="398" text-anchor="middle" font-size="13" font-weight="700" fill="#7A7A78">LOSERS FEED THE NEXT ROUND OF HOOKS</text>
+<rect x="290" y="90" width="220" height="36" rx="18" fill="#0C0C0C" stroke="#0C0C0C" stroke-width="1.5"/><text x="400.0" y="112.68" text-anchor="middle" font-size="13" font-weight="700" fill="#FFC400">6-10 NEW ADS / WEEK</text>
+</svg>

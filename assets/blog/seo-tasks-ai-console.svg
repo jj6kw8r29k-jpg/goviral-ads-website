@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<rect x="120" y="40" width="560" height="370" rx="18" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="2"/>
+<rect x="120" y="40" width="560" height="46" rx="18" fill="#0C0C0C"/>
+<circle cx="150" cy="63" r="6" fill="#FF4438"/><circle cx="172" cy="63" r="6" fill="#FFC400"/><circle cx="194" cy="63" r="6" fill="#00C853"/>
+<text x="400" y="68" text-anchor="middle" font-size="14" font-weight="700" fill="#F4F4F2">AI SEO EXECUTION · LIVE</text>
+<g font-size="14" font-weight="700" fill="#0C0C0C">
+<rect x="150" y="110" width="500" height="40" rx="9" fill="#F4F4F2" stroke="#0C0C0C" stroke-width="1.5"/><text x="166" y="135">META TITLES REWRITTEN</text><circle cx="620" cy="130" r="11" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="620" y="135" text-anchor="middle" fill="#FFFFFF" font-size="12">✓</text>
+<rect x="150" y="162" width="500" height="40" rx="9" fill="#F4F4F2" stroke="#0C0C0C" stroke-width="1.5"/><text x="166" y="187">INTERNAL LINKS ADDED</text><circle cx="620" cy="182" r="11" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="620" y="187" text-anchor="middle" fill="#FFFFFF" font-size="12">✓</text>
+<rect x="150" y="214" width="500" height="40" rx="9" fill="#F4F4F2" stroke="#0C0C0C" stroke-width="1.5"/><text x="166" y="239">SCHEMA DEPLOYED</text><circle cx="620" cy="234" r="11" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="620" y="239" text-anchor="middle" fill="#FFFFFF" font-size="12">✓</text>
+<rect x="150" y="266" width="500" height="40" rx="9" fill="#F4F4F2" stroke="#0C0C0C" stroke-width="1.5"/><text x="166" y="291">CRAWL ERRORS FIXED</text><circle cx="620" cy="286" r="11" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="620" y="291" text-anchor="middle" fill="#FFFFFF" font-size="12">✓</text>
+<rect x="150" y="318" width="500" height="40" rx="9" fill="#F4F4F2" stroke="#0C0C0C" stroke-width="1.5"/><text x="166" y="343">AEO SIGNALS UPDATED</text><circle cx="620" cy="338" r="11" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5"/><text x="620" y="343" text-anchor="middle" font-size="12">…</text>
+</g>
+<text x="400" y="392" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">HUMANS SET STRATEGY · AI EXECUTES</text>
+</svg>

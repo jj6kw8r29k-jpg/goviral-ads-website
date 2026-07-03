@@ -317,15 +317,35 @@ body.nav-open .nav__burger span::after { top: 0; transform: translateX(-50%) rot
 .faq__a-inner { padding: 0 26px 24px; color: var(--grey); font-size: 0.98rem; }
 .faq__a-inner strong { color: var(--ink); }
 
-/* ---------- Big statement / manifesto ---------- */
-.manifesto { text-align: center; max-width: 900px; margin: 0 auto; }
-.manifesto .line { display: block; font-size: clamp(1.6rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; opacity: 0.18; transition: opacity 0.5s ease; }
-.manifesto .line.is-lit { opacity: 1; }
-.manifesto .line .mini {
-  display: inline-block; vertical-align: middle; width: clamp(64px, 8vw, 110px); height: clamp(36px, 4.4vw, 56px);
-  border-radius: 100px; border: 1.5px solid var(--ink); object-fit: cover; margin: 0 10px; transform: rotate(-6deg);
+/* ---------- Big statement / manifesto (journey timeline) ---------- */
+.manifesto { max-width: 680px; margin: 0 auto; }
+.manifesto .line {
+  display: block; position: relative; text-align: left;
+  padding: 15px 0 15px 46px;
+  font-size: clamp(1.05rem, 1.9vw, 1.45rem); font-weight: 700; letter-spacing: -0.015em; line-height: 1.4;
+  opacity: 0.28; transform: translateX(-8px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.manifesto .line:nth-child(even) .mini { transform: rotate(6deg); }
+.manifesto .line::before {
+  content: ""; position: absolute; left: 13px; top: 0; bottom: 0; width: 2px;
+  background: var(--line);
+}
+.manifesto .line:first-child::before { top: 50%; }
+.manifesto .line::after {
+  content: ""; position: absolute; left: 7px; top: 50%; margin-top: -7px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--paper); border: 2px solid var(--ink);
+  transition: background 0.4s ease;
+}
+.manifesto .line.is-lit { opacity: 1; transform: none; }
+.manifesto .line.is-lit::after { background: var(--ink); }
+.manifesto .line--end {
+  padding: 30px 0 0; margin-top: 16px; text-align: center;
+  font-size: clamp(1.35rem, 2.9vw, 2.1rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.2;
+  transform: translateY(10px);
+}
+.manifesto .line--end::before, .manifesto .line--end::after { content: none; }
+.manifesto .line--end + .line--end { padding-top: 10px; margin-top: 0; }
 
 /* ---------- CTA band ---------- */
 .cta-band { background: var(--ink); color: var(--paper); border-radius: var(--radius-lg); padding: clamp(48px, 7vw, 96px) clamp(24px, 5vw, 72px); text-align: center; position: relative; overflow: hidden; }
@@ -438,13 +458,12 @@ body.nav-open .nav__burger span::after { top: 0; transform: translateX(-50%) rot
 
 /* color utility chips */
 .mini-chip {
-  display: inline-grid; place-items: center; vertical-align: middle;
-  width: clamp(52px, 6vw, 84px); height: clamp(32px, 3.8vw, 48px);
+  display: inline-grid; place-items: center; vertical-align: baseline;
+  min-width: 40px; height: 24px; padding: 0 8px;
   border-radius: 100px; border: 1.5px solid var(--ink);
-  font-family: var(--font-mono); font-weight: 700; font-size: 0.9em;
-  margin: 0 10px; transform: rotate(-6deg); color: var(--ink);
+  font-family: var(--font-mono); font-weight: 700; font-size: 0.6em;
+  margin: 0 6px; color: var(--ink);
 }
-.manifesto .line:nth-child(even) .mini-chip { transform: rotate(6deg); }
 
 /* generic keyframes for SVG/CSS visuals */
 @keyframes vizFlow { to { stroke-dashoffset: -28; } }
@@ -484,6 +503,33 @@ body.nav-open .nav__burger span::after { top: 0; transform: translateX(-50%) rot
   display: grid; place-items: center; overflow: hidden; padding: 8%;
 }
 .offer-viz svg { width: 100%; height: 100%; }
+
+/* ---------- Blog articles ---------- */
+.breadcrumb { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--grey); display: flex; gap: 8px; flex-wrap: wrap; }
+.breadcrumb a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+.article { max-width: 760px; margin: 0 auto; }
+.article__meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--grey); }
+.article__meta img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--ink); }
+.article h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); margin: 56px 0 18px; letter-spacing: -0.02em; }
+.article h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); margin: 36px 0 14px; }
+.article p { margin: 0 0 18px; font-size: 1.02rem; line-height: 1.75; }
+.article ul, .article ol { margin: 0 0 18px 4px; display: grid; gap: 10px; }
+.article ul li { padding-left: 26px; position: relative; font-size: 1rem; line-height: 1.6; }
+.article ul li::before { content: "↗"; position: absolute; left: 0; font-family: var(--font-mono); font-weight: 700; }
+.article ol { list-style: none; counter-reset: steps; }
+.article ol li { padding-left: 40px; position: relative; font-size: 1rem; line-height: 1.6; counter-increment: steps; }
+.article ol li::before { content: counter(steps, decimal-leading-zero); position: absolute; left: 0; font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; }
+.article figure { margin: 36px 0; }
+.article figure img { width: 100%; border: 1.5px solid var(--ink); border-radius: var(--radius-md); background: var(--white); }
+.article figcaption { font-family: var(--font-mono); font-size: 0.75rem; color: var(--grey); margin-top: 10px; text-align: center; }
+.article blockquote { border-left: 3px solid var(--ink); padding: 6px 0 6px 22px; margin: 28px 0; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; }
+.takeaways { background: var(--white); border: 1.5px solid var(--ink); border-radius: var(--radius-md); box-shadow: var(--shadow-hard-sm); padding: 26px 30px; margin: 36px 0; }
+.takeaways h2 { font-size: 1rem !important; margin: 0 0 14px !important; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; }
+.takeaways ul { display: grid; gap: 10px; margin: 0; }
+.takeaways li { padding-left: 26px; position: relative; font-size: 0.95rem; font-weight: 500; line-height: 1.5; }
+.takeaways li::before { content: "↗"; position: absolute; left: 0; font-family: var(--font-mono); font-weight: 700; }
+.article-cta { background: var(--ink); color: var(--paper); border-radius: var(--radius-md); padding: 30px 32px; margin: 44px 0; text-align: center; }
+.article-cta p { margin-bottom: 18px !important; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {

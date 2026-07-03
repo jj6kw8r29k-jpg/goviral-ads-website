@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="50" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">WHEN NOBODY IS LOCKED IN, INCENTIVES ALIGN</text>
+<rect x="120" y="140" width="180" height="50" rx="25" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/><text x="210.0" y="170.4" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">YOUR GROWTH</text>
+<rect x="500" y="140" width="200" height="50" rx="25" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="600.0" y="170.4" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">OUR RETENTION</text>
+<path d="M310,165 L490,165" stroke="#0C0C0C" stroke-width="3"/><path d="M490,165 l-16,-9 l0,18 Z" fill="#0C0C0C"/>
+<path d="M490,185 L310,185" stroke="#0C0C0C" stroke-width="3" opacity="0.4"/><path d="M310,185 l16,9 l0,-18 Z" fill="#0C0C0C" opacity="0.4"/>
+<path d="M180,300 C300,240 500,240 620,300" fill="none" stroke="#00C853" stroke-width="5" stroke-linecap="round"/>
+<path d="M620,300 l-23,-4 l14,-18 Z" fill="#00C853"/>
+<rect x="290" y="320" width="220" height="44" rx="22" fill="#0C0C0C" stroke="#0C0C0C" stroke-width="1.5"/><text x="400.0" y="347.04" text-anchor="middle" font-size="14" font-weight="700" fill="#00C853">SAME DIRECTION ↗</text>
+<text x="400" y="410" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">WE ONLY KEEP CLIENTS WE KEEP GROWING</text>
+</svg>

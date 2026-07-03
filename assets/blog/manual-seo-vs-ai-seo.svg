@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="200" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#7A7A78">MANUAL SEO · MONTHLY BURSTS</text>
+<text x="600" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">AI SEO · CONTINUOUS 24/7</text>
+<line x1="400" y1="30" x2="400" y2="420" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.35"/>
+<g stroke="#0C0C0C" stroke-width="1.5">
+<rect x="80" y="260" width="36" height="80" rx="6" fill="#FF4438"/><rect x="150" y="330" width="36" height="10" rx="5" fill="#FF4438" opacity="0.5"/>
+<rect x="220" y="250" width="36" height="90" rx="6" fill="#FF4438"/><rect x="290" y="330" width="36" height="10" rx="5" fill="#FF4438" opacity="0.5"/>
+</g>
+<text x="200" y="380" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">WORK · WAIT · WORK · WAIT</text>
+<path d="M450,340 C520,320 560,270 620,230 C670,196 710,170 750,140" fill="none" stroke="#00C853" stroke-width="5" stroke-linecap="round"/>
+<path d="M750,140 l-24,1 l12,-20 Z" fill="#00C853"/>
+<rect x="560" y="300" width="180" height="36" rx="18" fill="#0C0C0C" stroke="#0C0C0C" stroke-width="1.5"/><text x="650.0" y="322.68" text-anchor="middle" font-size="13" font-weight="700" fill="#00C853">NEVER SLEEPS</text>
+<text x="600" y="380" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">EVERY HOUR · EVERY DAY</text>
+</svg>

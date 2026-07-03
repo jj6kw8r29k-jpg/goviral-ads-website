@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<line x1="400" y1="30" x2="400" y2="420" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.35"/>
+<text x="200" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#7A7A78">6-MONTH CONTRACT</text>
+<text x="600" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">MONTH-TO-MONTH</text>
+<rect x="120" y="120" width="160" height="120" rx="16" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="2"/>
+<rect x="160" y="80" width="80" height="70" rx="35" fill="none" stroke="#0C0C0C" stroke-width="10"/>
+<circle cx="200" cy="180" r="16" fill="#0C0C0C"/><rect x="192" y="180" width="16" height="30" rx="6" fill="#0C0C0C"/>
+<text x="200" y="290" text-anchor="middle" font-size="13" font-weight="700" fill="#FF4438">YOU CARRY ALL THE RISK</text>
+<text x="200" y="314" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">AGENCY GETS PAID EITHER WAY</text>
+<g><rect x="455" y="120" width="84" height="40" rx="20" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="497.0" y="145.04" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">M1 ✓</text><rect x="551" y="120" width="84" height="40" rx="20" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="593.0" y="145.04" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">M2 ✓</text><rect x="647" y="120" width="84" height="40" rx="20" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="689.0" y="145.04" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">M3 ✓</text><rect x="455" y="172" width="84" height="40" rx="20" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="497.0" y="197.04" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">M4 ✓</text><rect x="551" y="172" width="84" height="40" rx="20" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/><text x="593.0" y="197.04" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">M5 ✓</text><rect x="647" y="172" width="84" height="40" rx="20" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5"/><text x="689.0" y="197.04" text-anchor="middle" font-size="14" font-weight="700" fill="#0C0C0C">M6 ?</text></g>
+<text x="600" y="290" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">EARNED EVERY SINGLE MONTH</text>
+<text x="600" y="314" text-anchor="middle" font-size="12" font-weight="700" fill="#7A7A78">LEAVE WHENEVER WE STOP DELIVERING</text>
+</svg>
