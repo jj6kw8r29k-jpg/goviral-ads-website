@@ -1,4 +1,4 @@
-/* GoViral Ads — shared interactions */
+/* GoViral Ads · shared interactions */
 (function () {
   "use strict";
 

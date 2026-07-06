@@ -1,5 +1,5 @@
 /* ============================================================
-   GOVIRAL ADS — DESIGN SYSTEM
+   GOVIRAL ADS · DESIGN SYSTEM
    Ink #0C0C0C · Paper #F4F4F2 · Signal White #FFF · Grey #7A7A78
    Display: Archivo · Body/Data: JetBrains Mono
    Motif: ↗ up and to the right. Always.
@@ -62,7 +62,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; line-height
   font-family: var(--font-mono);
 }
 
-/* Kicker — "● SECTION" section label */
+/* Kicker · "● SECTION" section label */
 .kicker {
   display: inline-flex; align-items: center; gap: 10px;
   font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
@@ -446,7 +446,7 @@ body.nav-open .nav__burger span::after { top: 0; transform: translateX(-50%) rot
 }
 
 /* ============================================================
-   ANIMATED VISUALS — vibrant accents on the monochrome system
+   ANIMATED VISUALS · vibrant accents on the monochrome system
    ============================================================ */
 .viz {
   background: var(--white); border: 1.5px solid var(--ink); border-radius: var(--radius-lg);
