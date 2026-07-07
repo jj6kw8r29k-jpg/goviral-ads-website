@@ -226,7 +226,7 @@ body.nav-open .nav__burger span::after { top: 0; transform: translateX(-50%) rot
 .card--static:hover { transform: none; box-shadow: none; }
 .card--ink { background: var(--ink); color: var(--paper); }
 .card--ink:hover { box-shadow: 6px 6px 0 rgba(12,12,12,0.3); }
-.card--paper { background: var(--paper); }
+.card--paper { background: var(--paper); color: var(--ink); }
 
 .card__arrow { position: absolute; top: 22px; right: 26px; font-family: var(--font-mono); font-weight: 700; font-size: 1.3rem; transition: transform 0.22s ease; }
 .card:hover .card__arrow { transform: translate(4px, -4px); }
