@@ -307,5 +307,43 @@
       rdt('track', 'SignUp');
     }
   </script>
+
+  <!-- Meta Schedule event: browser pixel + server-side Conversions API, deduplicated via event_id.
+       No value/currency: this is an unmonetized booking event, not a closed sale. -->
+  <script>
+    (function () {
+      var STORAGE_KEY = "schedule_fired_" + location.pathname;
+      if (sessionStorage.getItem(STORAGE_KEY)) return;
+      sessionStorage.setItem(STORAGE_KEY, "1");
+
+      function getCookie(name) {
+        var m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
+        return m ? decodeURIComponent(m[1]) : "";
+      }
+
+      var eventId = (window.crypto && crypto.randomUUID)
+        ? crypto.randomUUID()
+        : (Date.now() + "-" + Math.random().toString(36).slice(2));
+      var fbp = getCookie("_fbp");
+      var fbc = getCookie("_fbc");
+
+      if (typeof fbq === "function") {
+        fbq("track", "Schedule", {}, { eventID: eventId });
+      }
+
+      // Fires independently of the browser pixel above, so ad blockers, Safari ITP,
+      // or Meta's in-app browser blocking fbq() does not also lose the server-side event.
+      fetch("https://hmkyhwpuxtcfltthdggf.supabase.co/functions/v1/meta-capi", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          event_id: eventId,
+          event_source_url: location.href,
+          fbp: fbp,
+          fbc: fbc
+        })
+      }).catch(function () {});
+    })();
+  </script>
 </body>
 </html>
