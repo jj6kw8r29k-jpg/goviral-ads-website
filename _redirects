@@ -1,0 +1,64 @@
+# Legacy URLs from the previous site version, still ranking in Google (real
+# search impressions) but returning 404 since the rebuild. Redirected to the
+# closest live offer page to recapture existing search equity instead of
+# losing it to dead links. See RE-AUDIT-2026-07-17 for the GSC data behind this.
+
+# City-specific PPC/Google Ads landing pages -> Google Ads Proof Program
+/best-utah-ppc-company/ /google-ads 301
+/best-ppc-company-dallas-texas/ /google-ads 301
+/kansas-city-ppc-agency/ /google-ads 301
+/top-atlanta-ppc-agency/ /google-ads 301
+/san-diego-ppc-agency/ /google-ads 301
+/ppc-agency-houston/ /google-ads 301
+/raleigh-ppc-agency-north-carolina/ /google-ads 301
+/ppc-management-services-miami-florida/ /google-ads 301
+/best-ppc-marketing-fort-lauderdale-florida/ /google-ads 301
+/top-charlotte-ppc-agency-north-carolina/ /google-ads 301
+/top-nashville-ppc-agency/ /google-ads 301
+/best-sacramento-ppc-agency-california/ /google-ads 301
+/best-ppc-company-detroit-michigan/ /google-ads 301
+/long-island-ppc-management-agency/ /google-ads 301
+/top-ppc-company-seattle-washington/ /google-ads 301
+/ppc-agency-jacksonville-florida/ /google-ads 301
+/top-san-jose-ppc-agency-california/ /google-ads 301
+/best-boston-ppc-agency-massachusetts/ /google-ads 301
+/top-milwaukee-ppc-agency/ /google-ads 301
+/best-los-angeles-ppc-management-agency/ /google-ads 301
+/best-columbus-ppc-company-ohio/ /google-ads 301
+/top-minneapolis-ppc-agency-minnesota/ /google-ads 301
+/ppc-agency-in-austin/ /google-ads 301
+/omaha-ppc-agency-nebraska/ /google-ads 301
+/portland-ppc-company-oregon/ /google-ads 301
+/boulder-ppc-agency-colorado/ /google-ads 301
+/best-pittsburgh-ppc-agency-pennsylvania/ /google-ads 301
+/best-st-louis-ppc-company/ /google-ads 301
+/indianapolis-ppc-company/ /google-ads 301
+/best-montgomery-ppc-agency-alabama/ /google-ads 301
+/best-ppc-services-york-pennsylvania/ /google-ads 301
+/colorado-springs-ppc-agency/ /google-ads 301
+/top-fort-worth-ppc-agency-texas/ /google-ads 301
+/las-vegas-ppc-agency-nevada/ /google-ads 301
+/ppc-agency-topeka-ks/ /google-ads 301
+/ppc/ /google-ads 301
+/paid-search/ /google-ads 301
+/sem/ /google-ads 301
+/shopping-ads/ /google-ads 301
+/youtube-ads/ /google-ads 301
+/ecommerce-ads/ /google-ads 301
+
+# Meta/social ad pages -> Meta Growth Proof Program
+/facebook-ads/ /meta-ads 301
+/instagram-ads/ /meta-ads 301
+/paid-social-media-advertising/ /meta-ads 301
+
+# Generic site pages -> current equivalents
+/about-us/ /about 301
+/contact-us/ /contact 301
+/locations/ /services 301
+/blog/ /growth-playbook 301
+/blog/is-ppc-worth-it-in-2026-full-guide/ /google-ads-agency-us-2026 301
+/blog/montain-and-winter-cold-weather/ / 301
+
+# Legacy WordPress sitemap files, no longer generated
+/page-sitemap.xml /sitemap.xml 301
+/sitemap_index.xml /sitemap.xml 301
