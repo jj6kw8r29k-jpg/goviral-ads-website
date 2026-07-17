@@ -237,59 +237,7 @@
 
   <script src="js/main.js"></script>
 
-  <script>
-    if (typeof gtag === "function") {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17583065677/iq46CIjZhZ4bEM2UocBB',
-        'value': 1.0,
-        'currency': 'INR'
-      });
-    }
-    if (typeof rdt === "function") {
-      rdt('track', 'SignUp');
-    }
-  </script>
-
-  <!-- Meta Schedule event: browser pixel + server-side Conversions API, deduplicated via event_id.
-       No value/currency: this is an unmonetized booking event, not a closed sale. -->
-  <script>
-    (function () {
-      var STORAGE_KEY = "schedule_fired_" + location.pathname;
-      if (sessionStorage.getItem(STORAGE_KEY)) return;
-      sessionStorage.setItem(STORAGE_KEY, "1");
-
-      function getCookie(name) {
-        var m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
-        return m ? decodeURIComponent(m[1]) : "";
-      }
-
-      var eventId = (window.crypto && crypto.randomUUID)
-        ? crypto.randomUUID()
-        : (Date.now() + "-" + Math.random().toString(36).slice(2));
-      var fbp = getCookie("_fbp");
-      var fbc = getCookie("_fbc");
-
-      if (typeof fbq === "function") {
-        fbq("track", "Schedule", {}, { eventID: eventId });
-      }
-
-      // Fires independently of the browser pixel above, so ad blockers, Safari ITP,
-      // or Meta's in-app browser blocking fbq() does not also lose the server-side event.
-      fetch("https://hmkyhwpuxtcfltthdggf.supabase.co/functions/v1/meta-capi", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          event_id: eventId,
-          event_source_url: location.href,
-          fbp: fbp,
-          fbc: fbc
-        }),
-        keepalive: true
-      }).catch(function () {});
-    })();
-  </script>
-
-  <!-- Tracking scripts (moved to end of body for render performance) -->
+  <!-- Tracking scripts (loaded here, before conversion events below, so gtag/fbq/rdt exist when those fire) -->
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -348,5 +296,58 @@
   </script>
   <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
   <!-- End Reddit Pixel -->
-</body>
+
+  <script>
+    if (typeof gtag === "function") {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17583065677/iq46CIjZhZ4bEM2UocBB',
+        'value': 1.0,
+        'currency': 'INR'
+      });
+    }
+    if (typeof rdt === "function") {
+      rdt('track', 'SignUp');
+    }
+  </script>
+
+  <!-- Meta Schedule event: browser pixel + server-side Conversions API, deduplicated via event_id.
+       No value/currency: this is an unmonetized booking event, not a closed sale. -->
+  <script>
+    (function () {
+      var STORAGE_KEY = "schedule_fired_" + location.pathname;
+      if (sessionStorage.getItem(STORAGE_KEY)) return;
+      sessionStorage.setItem(STORAGE_KEY, "1");
+
+      function getCookie(name) {
+        var m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
+        return m ? decodeURIComponent(m[1]) : "";
+      }
+
+      var eventId = (window.crypto && crypto.randomUUID)
+        ? crypto.randomUUID()
+        : (Date.now() + "-" + Math.random().toString(36).slice(2));
+      var fbp = getCookie("_fbp");
+      var fbc = getCookie("_fbc");
+
+      if (typeof fbq === "function") {
+        fbq("track", "Schedule", {}, { eventID: eventId });
+      }
+
+      // Fires independently of the browser pixel above, so ad blockers, Safari ITP,
+      // or Meta's in-app browser blocking fbq() does not also lose the server-side event.
+      fetch("https://hmkyhwpuxtcfltthdggf.supabase.co/functions/v1/meta-capi", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          event_id: eventId,
+          event_source_url: location.href,
+          fbp: fbp,
+          fbc: fbc
+        }),
+        keepalive: true
+      }).catch(function () {});
+    })();
+  </script>
+
+  </body>
 </html>
