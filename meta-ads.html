@@ -524,7 +524,6 @@
       </div>
     </section>
 
-
     <!-- ================= STICKY CTA ================= -->
     <div class="sticky-cta"><a href="https://calendly.com/buildbraand/ads-strategy-call" target="_blank" rel="noopener" class="btn btn--ink">Book My $800 Meta Ads Trial ↗</a></div>
   </main>
@@ -582,7 +581,9 @@
 
   <script src="js/main.js"></script>
 
-  <!-- Tracking scripts (moved to end of body for render performance) -->
+    <!-- Tracking scripts: kept verbatim inside an inert <template>, activated on first interaction or after a 4s fallback, so they never block LCP/TBT. Pixel IDs and event calls below are byte-identical to the original, only the trigger timing changed. -->
+  <template id="deferred-trackers">
+<!-- Tracking scripts (moved to end of body for render performance) -->
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -641,5 +642,33 @@
   </script>
   <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
   <!-- End Reddit Pixel -->
+  </template>
+
+  <script>
+  (function () {
+    var loaded = false;
+    function loadTrackers() {
+      if (loaded) return;
+      loaded = true;
+      var tpl = document.getElementById('deferred-trackers');
+      if (!tpl) return;
+      var frag = tpl.content.cloneNode(true);
+      Array.prototype.forEach.call(frag.querySelectorAll('script'), function (oldScript) {
+        var newScript = document.createElement('script');
+        for (var i = 0; i < oldScript.attributes.length; i++) {
+          var attr = oldScript.attributes[i];
+          newScript.setAttribute(attr.name, attr.value);
+        }
+        newScript.textContent = oldScript.textContent;
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+      });
+      document.body.appendChild(frag);
+    }
+    ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (evt) {
+      window.addEventListener(evt, loadTrackers, { once: true, passive: true });
+    });
+    setTimeout(loadTrackers, 4000);
+  })();
+  </script>
 </body>
 </html>
