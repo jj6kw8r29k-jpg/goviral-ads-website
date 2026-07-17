@@ -1,0 +1,31 @@
+# GoViral Ads
+
+> Growth and performance marketing agency building complete customer acquisition systems across Google Ads, Meta Ads, SEO, and AI search. Based in the United States. No long-term contracts: clients see results before committing to an agency relationship.
+
+GoViral Ads runs three core offers: the Google Ads Proof Program (first month $600), the Meta Growth Proof Program (first month $800), and SEO Autopilot (AI-assisted SEO, $500/month). All engagements are month-to-month, no lock-in contracts. Founder is Akshat Singh.
+
+## Services
+
+- [Google Ads Proof Program](https://goviralads.agency/google-ads): Google Ads account audit, rebuild, and management. First month $600.
+- [Meta Growth Proof Program](https://goviralads.agency/meta-ads): Meta (Facebook/Instagram) Ads rebuild and management. First month $800.
+- [SEO Autopilot](https://goviralads.agency/seo-autopilot): Ongoing AI-assisted SEO and AI-search optimization. $500/month after setup.
+- [Services overview](https://goviralads.agency/services)
+- [Growth Playbook](https://goviralads.agency/growth-playbook)
+
+## Company
+
+- [About](https://goviralads.agency/about): Founder background and agency positioning.
+- [Contact](https://goviralads.agency/contact): Book a strategy call.
+- [No long-term contracts](https://goviralads.agency/no-long-term-contracts): Why every engagement is month-to-month.
+
+## Articles
+
+- [The Death of Traditional SEO](https://goviralads.agency/death-of-traditional-seo)
+- [Answer Engine Optimization (AEO)](https://goviralads.agency/answer-engine-optimization-aeo)
+- [Google Ads Account Rebuild](https://goviralads.agency/google-ads-account-rebuild)
+- [Meta Ads Creative Strategy](https://goviralads.agency/meta-ads-creative-strategy)
+
+## Optional
+
+- [Privacy Policy](https://goviralads.agency/privacy-policy)
+- [Terms](https://goviralads.agency/terms)
