@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="42" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">WHERE A SEARCH ACTUALLY ENDS NOW</text>
+<circle cx="230" cy="235" r="130" fill="none" stroke="#0C0C0C" stroke-width="1.5"/>
+<path d="M230,105 A130,130 0 0 1 340,290 L230,235 Z" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<path d="M230,105 A130,130 0 0 0 100,290 L230,235 Z" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<path d="M100,290 A130,130 0 0 0 340,290 L230,235 Z" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="300" y="185" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">AI</text>
+<text x="300" y="200" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">ANSWER</text>
+<text x="150" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">BLUE</text>
+<text x="150" y="214" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">LINK</text>
+<text x="230" y="330" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">NO CLICK,</text>
+<text x="230" y="344" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">SEARCH ENDS</text>
+<rect x="440" y="120" width="320" height="230" rx="12" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="440" y="120" width="320" height="40" rx="12" fill="#0C0C0C"/>
+<rect x="440" y="140" width="320" height="20" fill="#0C0C0C"/>
+<text x="600" y="146" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FFFFFF">RANKED #1 AND STILL INVISIBLE</text>
+<text x="470" y="190" font-size="11.5" fill="#0C0C0C">Your page:</text>
+<rect x="470" y="200" width="260" height="10" rx="5" fill="#0C0C0C" opacity="0.15"/>
+<text x="470" y="235" font-size="11.5" fill="#0C0C0C">AI answer cites:</text>
+<rect x="470" y="245" width="260" height="10" rx="5" fill="#00C853"/>
+<text x="740" y="253" text-anchor="end" font-size="18" fill="#00C853">✓</text>
+<text x="470" y="300" font-size="11" fill="#7A7A78">Position 1 in search results.</text>
+<text x="470" y="318" font-size="11" fill="#7A7A78">Zero visibility in the answer</text>
+<text x="470" y="336" font-size="11" fill="#7A7A78">a competitor gets cited in.</text>
+</svg>

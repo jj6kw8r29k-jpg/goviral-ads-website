@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="42" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">HOW TO SCORE AN SEO AGENCY IN 5 MINUTES</text>
+<rect x="60" y="70" width="330" height="340" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="60" y="70" width="330" height="42" rx="14" fill="#FF4438"/>
+<rect x="60" y="98" width="330" height="14" fill="#FF4438"/>
+<text x="225" y="97" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">WALK AWAY</text>
+<g font-size="12.5" fill="#0C0C0C">
+<circle cx="90" cy="145" r="9" fill="none" stroke="#FF4438" stroke-width="2"/><line x1="85" y1="140" x2="95" y2="150" stroke="#FF4438" stroke-width="2"/><line x1="95" y1="140" x2="85" y2="150" stroke="#FF4438" stroke-width="2"/>
+<text x="112" y="149">Full retainer under $1,000/mo</text>
+<circle cx="90" cy="185" r="9" fill="none" stroke="#FF4438" stroke-width="2"/><line x1="85" y1="180" x2="95" y2="190" stroke="#FF4438" stroke-width="2"/><line x1="95" y1="180" x2="85" y2="190" stroke="#FF4438" stroke-width="2"/>
+<text x="112" y="189">Hundreds of posts in days</text>
+<circle cx="90" cy="225" r="9" fill="none" stroke="#FF4438" stroke-width="2"/><line x1="85" y1="220" x2="95" y2="230" stroke="#FF4438" stroke-width="2"/><line x1="95" y1="220" x2="85" y2="230" stroke="#FF4438" stroke-width="2"/>
+<text x="112" y="229">Promises overnight rankings</text>
+<circle cx="90" cy="265" r="9" fill="none" stroke="#FF4438" stroke-width="2"/><line x1="85" y1="260" x2="95" y2="270" stroke="#FF4438" stroke-width="2"/><line x1="95" y1="260" x2="85" y2="270" stroke="#FF4438" stroke-width="2"/>
+<text x="112" y="269">Never mentions AI Overviews</text>
+<circle cx="90" cy="305" r="9" fill="none" stroke="#FF4438" stroke-width="2"/><line x1="85" y1="300" x2="95" y2="310" stroke="#FF4438" stroke-width="2"/><line x1="95" y1="300" x2="85" y2="310" stroke="#FF4438" stroke-width="2"/>
+<text x="112" y="309">"AI SEO" with no process change</text>
+</g>
+<rect x="410" y="70" width="330" height="340" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="410" y="70" width="330" height="42" rx="14" fill="#00C853"/>
+<rect x="410" y="98" width="330" height="14" fill="#00C853"/>
+<text x="575" y="97" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">WORTH A CALL</text>
+<g font-size="12.5" fill="#0C0C0C">
+<circle cx="440" cy="145" r="9" fill="#00C853"/><path d="M436,145 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="462" y="149">Technical audit before content</text>
+<circle cx="440" cy="185" r="9" fill="#00C853"/><path d="M436,185 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="462" y="189">Names who writes and edits</text>
+<circle cx="440" cy="225" r="9" fill="#00C853"/><path d="M436,225 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="462" y="229">Has an AI-visibility method</text>
+<circle cx="440" cy="265" r="9" fill="#00C853"/><path d="M436,265 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="462" y="269">Sets 3-6 month expectations</text>
+<circle cx="440" cy="305" r="9" fill="#00C853"/><path d="M436,305 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="462" y="309">Shows the system, not just talk</text>
+</g>
+</svg>
