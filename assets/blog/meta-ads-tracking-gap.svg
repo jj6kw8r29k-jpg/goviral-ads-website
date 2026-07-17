@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">HOW TWO SIGNALS BEAT ONE</text>
+<line x1="400" y1="70" x2="400" y2="420" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.35"/>
+<text x="200" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#7A7A78">META PIXEL ALONE</text>
+<rect x="120" y="130" width="160" height="90" rx="10" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="200" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">BROWSER EVENT</text>
+<circle cx="200" cy="255" r="18" fill="none" stroke="#FF4438" stroke-width="2.5"/>
+<line x1="188" y1="243" x2="212" y2="267" stroke="#FF4438" stroke-width="2.5"/>
+<line x1="212" y1="243" x2="188" y2="267" stroke="#FF4438" stroke-width="2.5"/>
+<rect x="95" y="300" width="210" height="34" rx="17" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/><text x="200.0" y="321.68" text-anchor="middle" font-size="12" font-weight="700" fill="#FF4438">BLOCKED BY ITP / AD BLOCKERS</text>
+<text x="600" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#0C0C0C">PIXEL + CONVERSIONS API</text>
+<rect x="500" y="120" width="90" height="60" rx="8" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="545" y="155" text-anchor="middle" font-size="10.5" font-weight="700" fill="#FFFFFF">BROWSER</text>
+<rect x="610" y="120" width="90" height="60" rx="8" fill="#0C0C0C" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="655" y="155" text-anchor="middle" font-size="10.5" font-weight="700" fill="#FFFFFF">SERVER API</text>
+<path d="M590,150 L610,150" stroke="#0C0C0C" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="600" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#7A7A78">MATCHED BY EVENT ID</text>
+<path d="M600,215 L600,250" stroke="#0C0C0C" stroke-width="2" stroke-linecap="round"/>
+<circle cx="600" cy="265" r="18" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<path d="M592,265 l6,6 l12,-13" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="495" y="300" width="210" height="34" rx="17" fill="#0C0C0C" stroke="#0C0C0C" stroke-width="1.5"/><text x="600.0" y="321.68" text-anchor="middle" font-size="12" font-weight="700" fill="#00C853">ONE CONVERSION, COUNTED ONCE</text>
+<text x="400" y="410" text-anchor="middle" font-size="11" fill="#7A7A78">Neither signal alone is complete. Together, deduplicated, they are.</text>
+</svg>

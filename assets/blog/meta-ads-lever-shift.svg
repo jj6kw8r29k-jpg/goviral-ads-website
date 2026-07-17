@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="42" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">WHERE META PERFORMANCE ACTUALLY COMES FROM</text>
+<text x="200" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#7A7A78">A FEW YEARS AGO</text>
+<line x1="90" y1="330" x2="310" y2="330" stroke="#0C0C0C" stroke-width="3" stroke-linecap="round"/>
+<circle cx="200" cy="330" r="10" fill="#0C0C0C"/>
+<rect x="90" y="300" width="80" height="30" rx="6" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5" transform="rotate(-9 130 315)"/>
+<rect x="215" y="230" width="95" height="30" rx="6" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5" transform="rotate(9 262 245)"/>
+<text x="130" y="360" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0C0C0C">CREATIVE</text>
+<text x="270" y="200" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0C0C0C">TARGETING</text>
+<text x="600" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">2026</text>
+<line x1="490" y1="330" x2="710" y2="330" stroke="#0C0C0C" stroke-width="3" stroke-linecap="round"/>
+<circle cx="600" cy="330" r="10" fill="#0C0C0C"/>
+<rect x="530" y="220" width="120" height="34" rx="6" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5" transform="rotate(-7 590 237)"/>
+<rect x="605" y="300" width="80" height="26" rx="6" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5" transform="rotate(7 645 313)"/>
+<text x="590" y="195" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0C0C0C">CREATIVE</text>
+<text x="645" y="352" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0C0C0C">TARGETING</text>
+<text x="590" y="176" text-anchor="middle" font-size="11" font-weight="700" fill="#00C853">(mostly automated by Advantage+)</text>
+<text x="400" y="410" text-anchor="middle" font-size="11" fill="#7A7A78">Advantage+ absorbed most targeting decisions. Creative is what's left for an agency to actually win on.</text>
+</svg>

@@ -99,6 +99,10 @@
 <p>Facebook advertising has become a creative problem before it's a targeting problem. Meta's algorithm rewards engagement, and engagement comes almost entirely from creative quality now that Advantage+ has taken over most of the audience and placement decisions a media buyer used to control by hand. Vertical video, format diversity, and a real testing pipeline outperform tight audience segmentation every time.</p>
 <p>The second shift is quieter but just as costly: tracking keeps degrading. Every account still running on browser pixel data alone is working from an incomplete picture, missing conversions that ad blockers and iOS privacy settings never let through.</p>
 <blockquote>Your account's performance is just a creative decay curve in slow motion if there's nothing new behind it.</blockquote>
+<figure>
+  <img src="assets/blog/meta-ads-lever-shift.svg" alt="Diagram showing the balance of Meta Ads performance shifting from targeting toward creative between a few years ago and 2026 as Advantage+ automated most targeting decisions" width="800" height="450" loading="lazy" />
+  <figcaption>Advantage+ took the targeting lever. Creative is what's left to win on.</figcaption>
+</figure>
 <h2 id="creative-is-the-lever">Creative Is The Lever Most Agencies Still Ignore</h2>
 <p>Ask a Meta ads agency who actually builds their creative. A lot of "full-service" agencies manage the campaign shell and outsource or skip the part that decides whether it works. If nobody on the account can explain why one ad wins and another fatigues in two weeks, they're managing spend, not performance.</p>
 <h2 id="questions-they-cant-answer">The Questions Most Agencies Can't Answer</h2>
@@ -108,6 +112,10 @@
 <li><strong>"What happens to performance in the first week?"</strong> Meta needs real time to learn from a new or restructured campaign. An agency promising instant stability either hasn't rebuilt anything real or is about to disappoint you.</li>
 </ul>
 <p>We rebuilt our own conversion tracking around exactly this: browser pixel plus an independent server-side Conversions API call, tied together with a shared event ID, so an ad blocker or Safari's privacy settings can't quietly erase a real conversion. It's the current baseline, not a differentiator, but most agencies still can't describe it when asked directly.</p>
+<figure>
+  <img src="assets/blog/meta-ads-tracking-gap.svg" alt="Diagram showing Meta Pixel alone missing conversions to blockers and ITP, versus Meta Pixel plus Conversions API matched by event ID to capture one deduplicated conversion" width="800" height="450" loading="lazy" />
+  <figcaption>One signal misses conversions. Two signals, deduplicated, don't.</figcaption>
+</figure>
 <h2 id="red-flags">Red Flags Worth Walking Away From</h2>
 <ol>
 <li><strong>A guaranteed ROAS with no conditions attached.</strong> Nobody controls your offer, your market, or what your competitors spend this month.</li>
