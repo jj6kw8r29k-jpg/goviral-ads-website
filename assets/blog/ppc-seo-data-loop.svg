@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">HOW PPC AND SEO FEED EACH OTHER DATA</text>
+
+<rect x="250" y="70" width="300" height="140" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="250" y="70" width="300" height="42" rx="14" fill="#2D6BFF"/>
+<rect x="250" y="98" width="300" height="14" fill="#2D6BFF"/>
+<text x="400" y="97" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">PPC CAMPAIGNS</text>
+<g font-size="12.5" fill="#0C0C0C">
+<circle cx="278" cy="140" r="5" fill="#2D6BFF"/><text x="292" y="144">Exact queries that convert</text>
+<circle cx="278" cy="164" r="5" fill="#2D6BFF"/><text x="292" y="168">New data within days</text>
+<circle cx="278" cy="188" r="5" fill="#2D6BFF"/><text x="292" y="192">Live buyer intent signals</text>
+</g>
+
+<rect x="250" y="290" width="300" height="140" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="250" y="290" width="300" height="42" rx="14" fill="#00C853"/>
+<rect x="250" y="318" width="300" height="14" fill="#00C853"/>
+<text x="400" y="317" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">SEO CONTENT</text>
+<g font-size="12.5" fill="#0C0C0C">
+<circle cx="278" cy="360" r="5" fill="#00C853"/><text x="292" y="364">Pages already ranking</text>
+<circle cx="278" cy="384" r="5" fill="#00C853"/><text x="292" y="388">Proven to convert</text>
+<circle cx="278" cy="408" r="5" fill="#00C853"/><text x="292" y="412">Built from real query data</text>
+</g>
+
+<path d="M550,140 L640,140 L640,360 L552,360" fill="none" stroke="#0C0C0C" stroke-width="2"/>
+<path d="M552,360 L566,354 L566,366 Z" fill="#0C0C0C"/>
+<g font-size="11.5" font-weight="700" fill="#0C0C0C">
+<text x="650" y="235">SEARCH-TERM</text>
+<text x="650" y="251">DATA</text>
+<text x="650" y="267" fill="#7A7A78" font-weight="400">(days, not months)</text>
+</g>
+
+<path d="M250,360 L160,360 L160,140 L248,140" fill="none" stroke="#0C0C0C" stroke-width="2"/>
+<path d="M248,140 L234,134 L234,146 Z" fill="#0C0C0C"/>
+<g font-size="11.5" font-weight="700" fill="#0C0C0C" text-anchor="end">
+<text x="150" y="235">PROVEN PAGES</text>
+<text x="150" y="251">ALREADY</text>
+<text x="150" y="267" fill="#7A7A78" font-weight="400">CONVERTING</text>
+</g>
+</svg>
