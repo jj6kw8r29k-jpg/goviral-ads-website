@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">FLAT-FEE TIERS BY ACCOUNT SIZE</text>
+
+<line x1="230" y1="70" x2="230" y2="400" stroke="#0C0C0C" stroke-width="1.5"/>
+
+<rect x="250" y="90" width="150" height="80" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="245" y="100" text-anchor="end" font-size="12.5" font-weight="700" fill="#0C0C0C">BUDGET /</text>
+<text x="245" y="115" text-anchor="end" font-size="12.5" font-weight="700" fill="#0C0C0C">FREELANCER</text>
+<text x="325" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">$500 &#8211;</text>
+<text x="325" y="153" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">$1,500/mo</text>
+<text x="245" y="150" text-anchor="end" font-size="10.5" fill="#7A7A78">UNDER $3K</text>
+<text x="245" y="163" text-anchor="end" font-size="10.5" fill="#7A7A78">AD SPEND</text>
+
+<rect x="250" y="190" width="330" height="80" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="245" y="200" text-anchor="end" font-size="12.5" font-weight="700" fill="#0C0C0C">MID-TIER</text>
+<text x="245" y="215" text-anchor="end" font-size="12.5" font-weight="700" fill="#0C0C0C">AGENCY</text>
+<text x="415" y="235" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">$1,500 &#8211;</text>
+<text x="415" y="253" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">$5,000/mo</text>
+<text x="245" y="250" text-anchor="end" font-size="10.5" fill="#7A7A78">$10K&#8211;$50K</text>
+<text x="245" y="263" text-anchor="end" font-size="10.5" fill="#7A7A78">AD SPEND</text>
+
+<rect x="250" y="290" width="500" height="80" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="245" y="300" text-anchor="end" font-size="12.5" font-weight="700" fill="#0C0C0C">PREMIUM /</text>
+<text x="245" y="315" text-anchor="end" font-size="12.5" font-weight="700" fill="#0C0C0C">ENTERPRISE</text>
+<text x="500" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">$5,000 &#8211; $20,000+/mo</text>
+<text x="245" y="350" text-anchor="end" font-size="10.5" fill="#7A7A78">$100K+</text>
+<text x="245" y="363" text-anchor="end" font-size="10.5" fill="#7A7A78">AD SPEND</text>
+
+<text x="470" y="415" text-anchor="middle" font-size="12" fill="#7A7A78">Bar length shows relative fee ceiling per tier</text>
+</svg>
