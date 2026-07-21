@@ -206,9 +206,11 @@ body.nav-open .nav__burger span::after { top: 0; transform: translateX(-50%) rot
 /* ---------- Press logo strip ---------- */
 .press-strip { display: flex; justify-content: center; overflow: hidden; }
 .press-strip__track { display: flex; align-items: center; gap: 56px; flex-wrap: wrap; justify-content: center; opacity: 0.85; }
+.press-strip__dup { display: none; }
 @keyframes press-marquee { to { transform: translateX(-50%); } }
 @media (max-width: 640px) {
   .press-strip__track { flex-wrap: nowrap; gap: 48px; width: max-content; animation: press-marquee 16s linear infinite; opacity: 1; }
+  .press-strip__dup { display: inline-block; }
 }
 
 /* ---------- Stats ---------- */
