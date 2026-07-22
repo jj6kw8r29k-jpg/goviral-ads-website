@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">THE 7-POINT, 20-MINUTE AUDIT</text>
+
+<line x1="60" y1="60" x2="60" y2="410" stroke="#0C0C0C" stroke-width="1.5"/>
+
+<g font-size="11.5" fill="#0C0C0C">
+<circle cx="60" cy="75" r="7" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="80" y="60" width="640" height="30" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="94" y="80" font-weight="700">1. Pull Search Terms Report</text>
+<text x="700" y="80" text-anchor="end" fill="#7A7A78">5 MIN</text>
+
+<circle cx="60" cy="125" r="7" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="80" y="110" width="640" height="30" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="94" y="130" font-weight="700">2. Check Negative Keyword Lists</text>
+<text x="700" y="130" text-anchor="end" fill="#7A7A78">3 MIN</text>
+
+<circle cx="60" cy="175" r="7" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="80" y="160" width="640" height="30" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="94" y="180" font-weight="700">3. Sort Keywords By Spend, Then Quality Score</text>
+<text x="700" y="180" text-anchor="end" fill="#7A7A78">3 MIN</text>
+
+<circle cx="60" cy="225" r="7" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="80" y="210" width="640" height="30" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="94" y="230" font-weight="700">4. Sanity-Check Conversion Tracking</text>
+<text x="700" y="230" text-anchor="end" fill="#7A7A78">4 MIN</text>
+
+<circle cx="60" cy="275" r="7" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="80" y="260" width="640" height="30" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="94" y="280" font-weight="700">5. Look At Match Type Distribution</text>
+<text x="700" y="280" text-anchor="end" fill="#7A7A78">2 MIN</text>
+
+<circle cx="60" cy="325" r="7" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="80" y="310" width="640" height="30" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="94" y="330" font-weight="700">6. Check Device, Location &amp; Schedule Waste</text>
+<text x="700" y="330" text-anchor="end" fill="#7A7A78">2 MIN</text>
+
+<circle cx="60" cy="375" r="7" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="80" y="360" width="640" height="30" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="94" y="380" font-weight="700">7. Check Impression Share Lost To Budget</text>
+<text x="700" y="380" text-anchor="end" fill="#7A7A78">1 MIN</text>
+</g>
+
+<text x="400" y="415" text-anchor="middle" font-size="11" fill="#7A7A78">Run in order for the fastest results. Total time: 20 minutes.</text>
+</svg>

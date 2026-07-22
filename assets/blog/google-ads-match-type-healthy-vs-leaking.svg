@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">MATCH TYPE SPEND: HEALTHY VS. LEAKING</text>
+
+<text x="205" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">HEALTHY ACCOUNT</text>
+<rect x="80" y="80" width="250" height="46" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="205" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">EXACT · 60%</text>
+<rect x="80" y="126" width="125" height="40" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="142" y="151" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">PHRASE · 30%</text>
+<rect x="80" y="166" width="42" height="34" fill="#7A7A78" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="205" y="188" text-anchor="start" font-size="11" font-weight="700" fill="#0C0C0C">BROAD · 10%</text>
+
+<line x1="400" y1="60" x2="400" y2="410" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+<text x="595" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">LEAKING ACCOUNT</text>
+<rect x="470" y="80" width="42" height="120" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="491" y="215" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">EXACT</text>
+<text x="491" y="229" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">15%</text>
+
+<rect x="522" y="140" width="63" height="60" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="553" y="215" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">PHRASE</text>
+<text x="553" y="229" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">20%</text>
+
+<rect x="595" y="80" width="145" height="120" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="667" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">BROAD</text>
+<text x="667" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">65%</text>
+
+<rect x="60" y="255" width="680" height="130" rx="12" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="400" y="285" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0C0C0C">WHY THIS MATTERS</text>
+<g font-size="11.5" fill="#0C0C0C">
+<circle cx="95" cy="315" r="4" fill="#00C853"/>
+<text x="110" y="319">Exact and phrase match target proven, specific queries you've already validated.</text>
+<circle cx="95" cy="342" r="4" fill="#FF4438"/>
+<text x="110" y="346">Broad match past roughly 10&#8211;20% of spend often signals loose targeting eating budget.</text>
+<circle cx="95" cy="369" r="4" fill="#7A7A78"/>
+<text x="110" y="373">Check Step 1's search terms report to see what that broad match share is actually buying.</text>
+</g>
+
+<text x="400" y="410" text-anchor="middle" font-size="11" fill="#7A7A78">A broad-match-heavy split isn't automatically bad, but it needs proof it's converting.</text>
+</svg>
