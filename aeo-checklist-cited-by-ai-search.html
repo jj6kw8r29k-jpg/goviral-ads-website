@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="google-site-verification" content="qJGjA2upkt8Q0Y8rVzHco3fXl8UX5GoJdVfzN64YceU" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEO Checklist: 12 Things Your Site Needs | GoViral Ads</title>
+  <meta name="description" content="A 12-point checklist covering crawler access, schema, and content structure to get cited by ChatGPT, Perplexity, and Google AI Overviews." />
+  <link rel="icon" type="image/png" href="assets/brand/arrow-black.png" />
+  <link rel="canonical" href="https://goviralads.agency/aeo-checklist-cited-by-ai-search" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GoViral Ads" />
+  <meta property="og:title" content="Your Website Doesn't Exist To ChatGPT Yet. Here's The 12-Point Fix." />
+  <meta property="og:description" content="A 12-point checklist covering crawler access, schema, and content structure to get cited by ChatGPT, Perplexity, and Google AI Overviews." />
+  <meta property="og:url" content="https://goviralads.agency/aeo-checklist-cited-by-ai-search" />
+  <meta property="og:image" content="https://goviralads.agency/assets/og/home.png" />
+  <meta property="article:published_time" content="2026-07-24" />
+  <meta property="article:author" content="Akshat Singh" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Your Website Doesn't Exist To ChatGPT Yet. Here's The 12-Point Fix." />
+  <meta name="twitter:description" content="A 12-point checklist covering crawler access, schema, and content structure to get cited by ChatGPT, Perplexity, and Google AI Overviews." />
+  <meta name="twitter:image" content="https://goviralads.agency/assets/og/home.png" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Your Website Doesn't Exist To ChatGPT Yet. Here's The 12-Point Fix.", "description": "A 12-point checklist covering crawler access, schema, and content structure to get cited by ChatGPT, Perplexity, and Google AI Overviews.", "url": "https://goviralads.agency/aeo-checklist-cited-by-ai-search", "image": "https://goviralads.agency/assets/og/home.png", "datePublished": "2026-07-24", "dateModified": "2026-07-24", "author": {"@type": "Person", "name": "Akshat Singh", "url": "https://goviralads.agency/about", "jobTitle": "Founder, GoViral Ads"}, "publisher": {"@type": "Organization", "name": "GoViral Ads", "url": "https://goviralads.agency/", "areaServed": {"@type": "Country", "name": "United States"}, "logo": {"@type": "ImageObject", "url": "https://goviralads.agency/assets/brand/logo-black.webp"}}, "mainEntityOfPage": "https://goviralads.agency/aeo-checklist-cited-by-ai-search", "articleSection": "AEO & AI Search"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goviralads.agency/"}, {"@type": "ListItem", "position": 2, "name": "The Growth Playbook™", "item": "https://goviralads.agency/growth-playbook"}, {"@type": "ListItem", "position": 3, "name": "Your Website Doesn't Exist To ChatGPT Yet. Here's The 12-Point Fix.", "item": "https://goviralads.agency/aeo-checklist-cited-by-ai-search"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to implement all 12 of these before I see any AI citations?", "acceptedAnswer": {"@type": "Answer", "text": "No. Crawler access (robots.txt, llms.txt, a clean sitemap) is the prerequisite, since none of the rest matters if the bots can't reach your pages. After that, schema and answer-first content tend to move fastest because they directly change what a model can extract. Authority signals compound more slowly."}}, {"@type": "Question", "name": "Will blocking AI crawlers actually hurt my Google rankings too?", "acceptedAnswer": {"@type": "Answer", "text": "Not directly. Googlebot and Google-Extended are separate user agents, and blocking Google-Extended doesn't touch classic Google indexing. But it does mean Gemini and Google's AI Overviews won't use your content, which is a real visibility loss even if your blue-link rankings stay untouched."}}, {"@type": "Question", "name": "What's the single highest-priority item on this checklist?", "acceptedAnswer": {"@type": "Answer", "text": "Check your robots.txt first. It takes two minutes, and if it's silently blocking GPTBot, ClaudeBot, or PerplexityBot, every other item on this list is wasted effort until that's fixed."}}, {"@type": "Question", "name": "How do I know if ChatGPT or Perplexity are already crawling my site?", "acceptedAnswer": {"@type": "Answer", "text": "Check your server logs or a tool like Cloudflare's bot analytics for user agents named GPTBot, ClaudeBot, PerplexityBot, Google-Extended, and OAI-SearchBot. If you don't see any hits at all, either your robots.txt is blocking them or they haven't found your sitemap yet."}}, {"@type": "Question", "name": "Is llms.txt something I need if I already have a sitemap?", "acceptedAnswer": {"@type": "Answer", "text": "They do different jobs. A sitemap tells crawlers which URLs exist. llms.txt is a plain-markdown summary of what your site actually is and which pages matter most, written for a model to read directly instead of inferring it from a crawl. It's not a universal standard yet, but the models that support it get a much cleaner signal."}}]}</script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJRP59XG"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="nav__logo" aria-label="GoViral Ads home">
+          <img src="assets/brand/logo-black.webp" alt="GoViral Ads" />
+        </a>
+        <ul class="nav__links">
+          <li><a href="/">[ Home ]</a></li>
+          <li><a href="about">[ About ]</a></li>
+          <li class="nav__drop">
+            <a href="services">[ Services ]</a>
+            <div class="nav__dropdown">
+              <a href="google-ads"><span>Google Ads Proof Program™</span>First month for $600</a>
+              <a href="meta-ads"><span>Meta Growth Proof Program™</span>First month for $800</a>
+              <a href="seo-autopilot"><span>SEO Autopilot™</span>AI-powered SEO · $500/mo</a>
+              <a href="services"><span>View All Growth Services ↗</span></a>
+            </div>
+          </li>
+          <li><a href="growth-playbook" class="is-active">[ Playbook™ ]</a></li>
+          <li><a href="contact">[ Contact ]</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="https://calendly.com/buildbraand/goviral-ads-strategy-meet" target="_blank" rel="noopener" class="btn btn--ink btn--sm">Get My Growth Strategy <span class="arr">↗</span></a>
+          <button class="nav__burger" aria-label="Toggle menu"><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- ================= ARTICLE HERO ================= -->
+      <section class="section" style="padding-bottom:clamp(32px,4vw,48px);">
+        <div class="container">
+          <div class="article reveal">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a><span>/</span><a href="growth-playbook">The Growth Playbook™</a><span>/</span><span aria-current="page">AEO &amp; AI Search</span>
+            </nav>
+            <h1 class="display-lg" style="margin:24px 0;">Your Website Doesn't Exist To ChatGPT Yet. Here's The 12-Point Fix.</h1>
+            <div class="article__meta">
+              <img src="assets/founder/akshat-singh.jpg" alt="Akshat Singh, founder of GoViral Ads" />
+              <span>By Akshat Singh</span><span>·</span><time datetime="2026-07-24">July 24, 2026</time><span>·</span><span>9 min read</span><span>·</span><span class="tag" style="font-size:0.62rem; padding:4px 10px;">AEO &amp; AI Search</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE BODY ================= -->
+      <section class="section" style="padding-top:0; background:var(--white); border-top:1.5px solid var(--ink);">
+        <div class="container">
+          <div class="article" style="padding-top:clamp(40px,5vw,64px);">
+            <div class="takeaways">
+              <h2>Key Takeaways</h2>
+              <ul>
+            <li>Getting cited by ChatGPT, Perplexity, and Google AI Overviews requires 12 checks across four categories: crawler access, entity clarity, content structure, and trust signals.</li>
+            <li>None of the other 11 checks matter if your robots.txt is silently blocking GPTBot, ClaudeBot, PerplexityBot, Google-Extended, or OAI-SearchBot. Check that one first.</li>
+            <li>An llms.txt file at your root gives models a plain-markdown map of your site instead of forcing them to infer structure from a crawl.</li>
+            <li>AI systems weigh specific, verifiable facts over generic claims, and consensus across independent sources over a single confident page.</li>
+            <li>Most of these checks take minutes each. The hard part isn't any single item, it's running all 12 consistently as your site changes.</li>
+              </ul>
+            </div>
+
+<h2 id="resume">Remember The Resume With No Job History?</h2>
+<p>Picture handing a hiring manager a resume that reads "experienced professional, great at what I do" with no company names, no dates, no results. No interviewer would take the risk of recommending that candidate, no matter how good they actually are. The information a decision-maker needs just isn't on the page.</p>
+<p>That's what most business websites hand ChatGPT, Perplexity, and Google's AI Overviews every day. The business might be excellent. The proof might exist. But if a model can't crawl the page, can't tell who you are, can't find a self-contained answer, and can't verify you're trustworthy, it recommends someone else, the same way that hiring manager moves to the next resume.</p>
+<p>The 12 checks below are the difference between a site an AI model can confidently cite and one it quietly skips.</p>
+
+<h2 id="checklist-overview">The 12-Point AEO Checklist</h2>
+<p>The 12 checks split into four groups, and the groups build on each other in order. Access comes first because nothing else matters if the crawler never reaches the page. Entity and structure come next. Trust signals compound last, and slowest.</p>
+<figure>
+  <img src="assets/blog/aeo-checklist-12-point-scorecard.svg" alt="Scorecard of the 12-point AEO checklist grouped into four categories: letting AI crawlers in, making your entity clear, structuring content to be lifted, and proving you are worth citing" width="800" height="450" loading="lazy" />
+  <figcaption>Twelve checks, four categories, run roughly in this order.</figcaption>
+</figure>
+
+<h2 id="group-access">Group 1: Let The Crawlers In First</h2>
+<p>Before you touch a single word of content, confirm the bots doing the reading can actually get past your front door. Three checks control that.</p>
+<h3>1. Robots.txt Allows The AI Crawlers</h3>
+<p>Open your robots.txt and look for a blanket <code>Disallow</code> that blocks GPTBot, ClaudeBot, PerplexityBot, Google-Extended, or OAI-SearchBot, by name or by a wildcard rule written for "all bots except known search engines."</p>
+<p>Plenty of WordPress and Squarespace defaults, and a fair number of security plugins, still ship that exact wildcard rule. It was written to stop scrapers, and it quietly stops every AI crawler that would otherwise cite you along with them.</p>
+<h3>2. An llms.txt File Exists At Your Root</h3>
+<p>llms.txt lives at yoursite.com/llms.txt and lists your key pages in plain markdown, so a model can read what your site actually is without inferring it from a full crawl. It isn't an official standard every model honors yet, but the models that do read it get an unambiguous map instead of a guess.</p>
+<h3>3. Your Sitemap Is Current And Your Canonicals Are Clean</h3>
+<p>An up-to-date XML sitemap, submitted to Search Console, with no conflicting canonical tags pointing two different URLs to the same content. A crawler that hits a confusing canonical signal often just skips the page rather than guess which version is authoritative.</p>
+<figure>
+  <img src="assets/blog/ai-crawler-access-blocked-vs-allowed.svg" alt="Comparison showing GPTBot, ClaudeBot, PerplexityBot, Google-Extended, and OAI-SearchBot all blocked under a typical default robots.txt versus all allowed under an AEO-ready robots.txt" width="800" height="450" loading="lazy" />
+  <figcaption>Same five bots. One line in robots.txt separates being cited from being invisible.</figcaption>
+</figure>
+
+<h2 id="group-entity">Group 2: Make Your Entity Unmistakable</h2>
+<p>AI systems reason in entities, not keywords. Before a model cites you, it has to be confident it knows exactly who you are.</p>
+<h3>4. Organization Schema Is Present Sitewide</h3>
+<p>Name, logo, and <code>sameAs</code> links to your real social and directory profiles, present in the markup on every page, not just the homepage. This is how you tell a machine, in its own language, exactly who's speaking.</p>
+<h3>5. One Consistent Business Description, Everywhere</h3>
+<p>The same description, close to word for word, across your About page, homepage meta description, LinkedIn, Google Business Profile, and every directory listing. Inconsistent descriptions read to a model as either a different business or an unreliable source, neither of which gets cited.</p>
+<h3>6. Real Author Identity On Every Article</h3>
+<p>A named author with a real bio and credentials, marked up with Person schema, not a byline that says "Admin" or "Team." Models weigh named, credentialed authorship as a trust signal the same way a human reader does.</p>
+
+<h2 id="group-structure">Group 3: Structure Content To Be Lifted</h2>
+<p>A technically perfect site still won't get cited if the content itself resists extraction. Three checks fix that.</p>
+<h3>7. FAQ Schema Matches A Real, Visible FAQ Section</h3>
+<p>FAQPage schema markup that mirrors an actual FAQ section on the page, word for word, not schema bolted on with no visible counterpart. Mismatched schema is either ignored or flagged as unreliable.</p>
+<h3>8. Every H2 Is Answered In The First Sentence Underneath</h3>
+<p>State the direct answer immediately under each heading, then elaborate. A paragraph that only makes sense after three paragraphs of buildup is a paragraph a model can't lift and cite on its own.</p>
+<h3>9. Headings Are Phrased As The Actual Questions People Ask</h3>
+<p>"What Google Ads management actually costs" gets matched against a real query. "Pricing Considerations" doesn't. Write headings the way your customer would type the question into ChatGPT, not the way a brochure would label a section.</p>
+
+<h2 id="group-trust">Group 4: Prove You're Worth Citing</h2>
+<p>The last three checks decide which of two technically identical pages a model actually trusts enough to name.</p>
+<h3>10. Specific, Real Numbers Instead Of Vague Claims</h3>
+<p>"$6.43M in conversion value at 1,375% ROAS" gets cited. "Significant results for our clients" doesn't. Models weigh specific, verifiable facts over generic claims, the same way a skeptical reader does.</p>
+<h3>11. Published And Modified Dates Are Kept Current</h3>
+<p>Article schema with a <code>datePublished</code> and <code>dateModified</code> that's actually updated when the content changes, not frozen at the original publish date forever. Freshness is a real signal, and a page that visibly hasn't been touched in two years reads as a lower-confidence source.</p>
+<h3>12. Third-Party Mentions Build Consensus</h3>
+<p>Press mentions, directory listings, and reviews on other domains that describe your business consistently. AI systems weigh consensus across independent sources before citing any single one as the source of record. A single confident page saying something about itself is a weaker signal than three unrelated pages agreeing.</p>
+
+<h2 id="what-smart-businesses-do">What Smart Businesses Do With This Checklist</h2>
+<p>Running these 12 checks once is a Saturday afternoon. Running them every time you publish a page, change a description, or your schema quietly breaks after a template update is a job nobody keeps up with manually, which is exactly why most sites drift out of compliance within a few months of getting it right the first time.</p>
+<p><a href="seo-autopilot">SEO Autopilot™</a> was built to run this checklist continuously instead of once. One SEO Autopilot™ client came in with broken citations and no local schema at all; after fixing citations, schema, and local signals on an ongoing basis, they now hold top-3 map placement for their money keywords, and the calls come in without anyone touching a dashboard. That's the difference between doing this list once and doing it as infrastructure.</p>
+
+            <div class="article-cta">
+              <p class="display-sm" style="color:var(--paper); font-size:1.3rem;">Want Google and AI answer engines optimized at the same time, continuously?</p>
+              <a href="seo-autopilot" class="btn btn--lg">See SEO Autopilot™ In Action ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE FAQ ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker">FAQ</span>
+            <h2 class="display-md">Questions People Also Ask</h2>
+          </div>
+          <div class="faq reveal">
+          <div class="faq__item">
+            <button class="faq__q">Do I need to implement all 12 of these before I see any AI citations? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">No. Crawler access (robots.txt, llms.txt, a clean sitemap) is the prerequisite, since none of the rest matters if the bots can't reach your pages. After that, schema and answer-first content tend to move fastest because they directly change what a model can extract. Authority signals compound more slowly.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">Will blocking AI crawlers actually hurt my Google rankings too? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">Not directly. Googlebot and Google-Extended are separate user agents, and blocking Google-Extended doesn't touch classic Google indexing. But it does mean Gemini and Google's AI Overviews won't use your content, which is a real visibility loss even if your blue-link rankings stay untouched.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">What's the single highest-priority item on this checklist? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">Check your robots.txt first. It takes two minutes, and if it's silently blocking GPTBot, ClaudeBot, or PerplexityBot, every other item on this list is wasted effort until that's fixed.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">How do I know if ChatGPT or Perplexity are already crawling my site? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">Check your server logs or a tool like Cloudflare's bot analytics for user agents named GPTBot, ClaudeBot, PerplexityBot, Google-Extended, and OAI-SearchBot. If you don't see any hits at all, either your robots.txt is blocking them or they haven't found your sitemap yet.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">Is llms.txt something I need if I already have a sitemap? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">They do different jobs. A sitemap tells crawlers which URLs exist. llms.txt is a plain-markdown summary of what your site actually is and which pages matter most, written for a model to read directly instead of inferring it from a crawl. It's not a universal standard yet, but the models that support it get a much cleaner signal.</div></div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= RELATED ================= -->
+      <section class="section" style="padding-top:0;">
+        <div class="container">
+          <div class="section-head reveal" style="margin-bottom:32px;">
+            <span class="kicker">More From The Playbook™</span>
+          </div>
+          <div class="grid-2 reveal-stagger" style="max-width:900px; margin:0 auto;">
+          <a href="answer-engine-optimization-aeo" class="card" style="display:block;"><span class="card__arrow">↗</span><span class="mono" style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--grey);">Keep Reading</span><h3 class="display-sm" style="margin-top:10px;">Answer Engine Optimization (AEO): How To Get Cited By ChatGPT, Gemini &amp; Perplexity</h3></a>
+          <a href="seo-agency-us-2026" class="card" style="display:block;"><span class="card__arrow">↗</span><span class="mono" style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--grey);">Keep Reading</span><h3 class="display-sm" style="margin-top:10px;">Hiring an SEO Agency in the US in 2026: What Actually Changed</h3></a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__box">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/brand/logo-white.webp" alt="GoViral Ads" />
+          <p>We don't chase impressions. We engineer momentum. Growth × performance marketing for businesses that refuse to settle for average.</p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="google-ads">Google Ads Proof Program™</a></li>
+            <li><a href="meta-ads">Meta Growth Proof Program™</a></li>
+            <li><a href="seo-autopilot">SEO Autopilot™</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="growth-playbook">The Growth Playbook™</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy">Privacy Policy</a></li>
+            <li><a href="terms">Terms &amp; Conditions</a></li>
+            <li><a href="cookie-policy">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/go-viral-ads-agency/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.facebook.com/61578996099665/" target="_blank" rel="noopener">Facebook ↗</a></li>
+            <li><a href="https://www.instagram.com/goviral_ads_agency/?hl=en" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a href="https://www.youtube.com/@GoViralAdsAgency" target="_blank" rel="noopener">YouTube ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> GoViral Ads. All rights reserved.</span>
+        <span>Up and to the right. Always. ↗</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Tracking scripts: kept verbatim inside an inert <template>, activated on first interaction or after a 4s fallback, so they never block LCP/TBT. Pixel IDs and event calls below are byte-identical to the original, only the trigger timing changed. -->
+  <template id="deferred-trackers">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJRP59XG');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17583065677"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17583065677');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2188318194947797');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2188318194947797&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "rifvqmqves");
+  </script>
+  <!-- Snap Pixel Code -->
+  <script type='text/javascript'>
+  (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+  {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+  a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+  r.src=n;var u=t.getElementsByTagName(s)[0];
+  u.parentNode.insertBefore(r,u);})(window,document,
+  'https://sc-static.net/scevent.min.js');
+  snaptr('init', 'dcbebeec-9a31-4cf5-9ba7-018cde5ff673', {});
+  snaptr('track', 'PAGE_VIEW');
+  </script>
+  <!-- End Snap Pixel Code -->
+  <!-- Reddit Pixel -->
+  <script>
+  !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j6kvfm5qdek9",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j6kvfm5qdek9');rdt('track', 'PageVisit');
+  </script>
+  <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+  <!-- End Reddit Pixel -->
+  </template>
+
+  <script>
+  (function () {
+    var loaded = false;
+    function loadTrackers() {
+      if (loaded) return;
+      loaded = true;
+      var tpl = document.getElementById('deferred-trackers');
+      if (!tpl) return;
+      var frag = tpl.content.cloneNode(true);
+      Array.prototype.forEach.call(frag.querySelectorAll('script'), function (oldScript) {
+        var newScript = document.createElement('script');
+        for (var i = 0; i < oldScript.attributes.length; i++) {
+          var attr = oldScript.attributes[i];
+          newScript.setAttribute(attr.name, attr.value);
+        }
+        newScript.textContent = oldScript.textContent;
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+      });
+      document.body.appendChild(frag);
+    }
+    ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (evt) {
+      window.addEventListener(evt, loadTrackers, { once: true, passive: true });
+    });
+    setTimeout(loadTrackers, 4000);
+  })();
+  </script>
+</body>
+</html>
