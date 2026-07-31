@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="42" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">PERFORMANCE MAX: BEFORE VS. AFTER 2026 REPORTING</text>
+
+<rect x="60" y="70" width="330" height="340" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="60" y="70" width="330" height="42" rx="14" fill="#7A7A78"/>
+<rect x="60" y="98" width="330" height="14" fill="#7A7A78"/>
+<text x="225" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">BEFORE 2026: THE BLACK BOX</text>
+<rect x="90" y="135" width="270" height="110" rx="10" fill="#F4F4F2" stroke="#7A7A78" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="225" y="175" text-anchor="middle" font-size="30" font-weight="700" fill="#7A7A78">?</text>
+<text x="225" y="205" text-anchor="middle" font-size="11" fill="#0C0C0C">Search · Shopping · Display</text>
+<text x="225" y="221" text-anchor="middle" font-size="11" fill="#0C0C0C">YouTube · Discover · Gmail · Maps</text>
+<text x="225" y="237" text-anchor="middle" font-size="10" fill="#7A7A78">(all blended, no breakdown)</text>
+<rect x="90" y="270" width="270" height="52" rx="8" fill="#F4F4F2" stroke="#7A7A78" stroke-width="1.5"/>
+<text x="225" y="292" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">ONE NUMBER OUT:</text>
+<text x="225" y="310" text-anchor="middle" font-size="11" fill="#0C0C0C">Total conversions. That's it.</text>
+<text x="225" y="360" text-anchor="middle" font-size="10.5" fill="#0C0C0C">"Trust the algorithm."</text>
+<text x="225" y="378" text-anchor="middle" font-size="10.5" fill="#0C0C0C">No way to see which channel earned it.</text>
+
+<rect x="410" y="70" width="330" height="340" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="410" y="70" width="330" height="42" rx="14" fill="#2D6BFF"/>
+<rect x="410" y="98" width="330" height="14" fill="#2D6BFF"/>
+<text x="575" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">2026: CHANNEL INSIGHTS</text>
+<g font-size="11.5" fill="#0C0C0C">
+<circle cx="440" cy="135" r="8" fill="#2D6BFF"/><path d="M436,135 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="139">Search</text>
+<circle cx="440" cy="160" r="8" fill="#2D6BFF"/><path d="M436,160 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="164">Shopping</text>
+<circle cx="440" cy="185" r="8" fill="#2D6BFF"/><path d="M436,185 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="189">Display</text>
+<circle cx="440" cy="210" r="8" fill="#2D6BFF"/><path d="M436,210 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="214">YouTube</text>
+<circle cx="590" cy="135" r="8" fill="#2D6BFF"/><path d="M586,135 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="610" y="139">Discover</text>
+<circle cx="590" cy="160" r="8" fill="#2D6BFF"/><path d="M586,160 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="610" y="164">Gmail</text>
+<circle cx="590" cy="185" r="8" fill="#2D6BFF"/><path d="M586,185 l3,3 l6,-7" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+<text x="610" y="189">Maps</text>
+</g>
+<rect x="440" y="240" width="270" height="52" rx="8" fill="#2D6BFF" fill-opacity="0.08" stroke="#2D6BFF" stroke-width="1.5"/>
+<text x="575" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">SEVEN NUMBERS OUT:</text>
+<text x="575" y="280" text-anchor="middle" font-size="11" fill="#0C0C0C">One per network, visible by name.</text>
+<text x="575" y="330" text-anchor="middle" font-size="10.5" fill="#0C0C0C">"See what the algorithm is doing."</text>
+<text x="575" y="348" text-anchor="middle" font-size="10.5" fill="#0C0C0C">Same targeting logic, new visibility.</text>
+</svg>
