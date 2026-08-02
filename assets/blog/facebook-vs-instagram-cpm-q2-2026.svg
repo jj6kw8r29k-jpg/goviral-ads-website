@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">FACEBOOK VS. INSTAGRAM: TWO WAYS TO GROW, Q2 2026</text>
+<text x="400" y="58" text-anchor="middle" font-size="11" fill="#7A7A78">Source: Tinuiti Q2 2026 Digital Ads Benchmark Report (year-over-year)</text>
+
+<rect x="70" y="90" width="300" height="320" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="220" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">FACEBOOK</text>
+<text x="220" y="140" text-anchor="middle" font-size="10.5" fill="#7A7A78">PRICE-LED GROWTH</text>
+
+<text x="220" y="196" text-anchor="middle" font-size="30" font-weight="900" fill="#FF4438">+13%</text>
+<text x="220" y="214" text-anchor="middle" font-size="10.5" fill="#0C0C0C">CPM</text>
+
+<text x="220" y="258" text-anchor="middle" font-size="24" font-weight="900" fill="#0C0C0C">&#8722;5%</text>
+<text x="220" y="276" text-anchor="middle" font-size="10.5" fill="#0C0C0C">IMPRESSIONS</text>
+
+<rect x="140" y="300" width="160" height="26" rx="4" fill="#F4F4F2" stroke="#0C0C0C" stroke-width="1.2"/>
+<rect x="140" y="300" width="70" height="26" rx="4" fill="#FF4438" fill-opacity="0.85"/>
+<text x="220" y="317" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">SPEND +7%</text>
+<text x="220" y="360" text-anchor="middle" font-size="11" fill="#0C0C0C">Paid more, for less inventory.</text>
+<text x="220" y="378" text-anchor="middle" font-size="11" fill="#0C0C0C">Growth was entirely price.</text>
+
+<rect x="430" y="90" width="300" height="320" rx="14" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="580" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">INSTAGRAM</text>
+<text x="580" y="140" text-anchor="middle" font-size="10.5" fill="#7A7A78">VOLUME-LED GROWTH</text>
+
+<text x="580" y="196" text-anchor="middle" font-size="30" font-weight="900" fill="#00C853">FLAT</text>
+<text x="580" y="214" text-anchor="middle" font-size="10.5" fill="#0C0C0C">CPM</text>
+
+<text x="580" y="258" text-anchor="middle" font-size="24" font-weight="900" fill="#0C0C0C">35%</text>
+<text x="580" y="276" text-anchor="middle" font-size="10.5" fill="#0C0C0C">OF IMPRESSIONS = REELS</text>
+
+<rect x="500" y="300" width="160" height="26" rx="4" fill="#F4F4F2" stroke="#0C0C0C" stroke-width="1.2"/>
+<rect x="500" y="300" width="160" height="26" rx="4" fill="#00C853" fill-opacity="0.85"/>
+<text x="580" y="317" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">SPEND +17%</text>
+<text x="580" y="360" text-anchor="middle" font-size="11" fill="#0C0C0C">Same price, more inventory.</text>
+<text x="580" y="378" text-anchor="middle" font-size="11" fill="#0C0C0C">Reels absorbed the growth.</text>
+
+<text x="400" y="432" text-anchor="middle" font-size="10.5" fill="#7A7A78">Same company, same quarter. One placement got pricier. One didn't.</text>
+</svg>

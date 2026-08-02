@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">META Q2 2026: ATTENTION BARELY GREW. PRICE DID.</text>
+<text x="400" y="58" text-anchor="middle" font-size="11" fill="#7A7A78">Source: Meta Platforms Q2 2026 earnings report, July 29, 2026 (year-over-year)</text>
+
+<line x1="70" y1="380" x2="740" y2="380" stroke="#0C0C0C" stroke-width="1.5"/>
+
+<rect x="120" y="356" width="110" height="24" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="175" y="344" text-anchor="middle" font-size="16" font-weight="900" fill="#0C0C0C">+3%</text>
+<text x="175" y="404" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">DAILY ACTIVE</text>
+<text x="175" y="418" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">PEOPLE</text>
+
+<rect x="270" y="266" width="110" height="114" fill="#FFC400" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="325" y="254" text-anchor="middle" font-size="16" font-weight="900" fill="#0C0C0C">+14%</text>
+<text x="325" y="404" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">AD IMPRESSIONS</text>
+<text x="325" y="418" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">DELIVERED</text>
+
+<rect x="420" y="282" width="110" height="98" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="475" y="270" text-anchor="middle" font-size="16" font-weight="900" fill="#0C0C0C">+12%</text>
+<text x="475" y="404" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">AVG. PRICE</text>
+<text x="475" y="418" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">PER AD</text>
+
+<rect x="570" y="160" width="110" height="220" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="625" y="148" text-anchor="middle" font-size="16" font-weight="900" fill="#0C0C0C">+27%</text>
+<text x="625" y="404" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">AD REVENUE</text>
+<text x="625" y="418" text-anchor="middle" font-size="11" font-weight="700" fill="#0C0C0C">($59.36B)</text>
+
+<path d="M175,335 L625,140" fill="none" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text x="500" y="115" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">MORE BIDDERS, BARELY MORE EYEBALLS</text>
+</svg>
