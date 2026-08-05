@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">TWO TRACKING MECHANISMS. ONLY ONE NEVER STOPPED.</text>
+<text x="400" y="58" text-anchor="middle" font-size="11" fill="#7A7A78">Source: Apple's iOS 14.5 rollout (April 26, 2021) vs. WebKit's Safari 13.1 full cookie block (2020)</text>
+
+<line x1="100" y1="380" x2="740" y2="380" stroke="#0C0C0C" stroke-width="1.5"/>
+<g font-size="10" fill="#7A7A78" font-weight="700">
+<line x1="100" y1="375" x2="100" y2="385" stroke="#0C0C0C" stroke-width="1.5"/><text x="100" y="398" text-anchor="middle">2020</text>
+<line x1="207" y1="375" x2="207" y2="385" stroke="#0C0C0C" stroke-width="1.5"/><text x="207" y="398" text-anchor="middle">2021</text>
+<line x1="313" y1="375" x2="313" y2="385" stroke="#0C0C0C" stroke-width="1.5"/><text x="313" y="398" text-anchor="middle">2022</text>
+<line x1="420" y1="375" x2="420" y2="385" stroke="#0C0C0C" stroke-width="1.5"/><text x="420" y="398" text-anchor="middle">2023</text>
+<line x1="527" y1="375" x2="527" y2="385" stroke="#0C0C0C" stroke-width="1.5"/><text x="527" y="398" text-anchor="middle">2024</text>
+<line x1="633" y1="375" x2="633" y2="385" stroke="#0C0C0C" stroke-width="1.5"/><text x="633" y="398" text-anchor="middle">2025</text>
+<line x1="740" y1="375" x2="740" y2="385" stroke="#0C0C0C" stroke-width="1.5"/><text x="740" y="398" text-anchor="middle">2026</text>
+</g>
+
+<text x="100" y="150" font-size="13" font-weight="700" fill="#0C0C0C">SAFARI ITP (WEBKIT)</text>
+<rect x="100" y="165" width="640" height="30" rx="6" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="420" y="185" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">BLOCKS 3RD-PARTY COOKIES FOR EVERY SAFARI USER, NO PROMPT NEEDED</text>
+<line x1="100" y1="195" x2="100" y2="380" stroke="#2D6BFF" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text x="100" y="222" font-size="10" font-weight="700" fill="#2D6BFF">STARTED SAFARI 13.1, 2020</text>
+
+<text x="207" y="270" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">IOS APP TRACKING TRANSPARENCY</text>
+<circle cx="207" cy="300" r="12" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<line x1="207" y1="312" x2="207" y2="380" stroke="#FF4438" stroke-width="1.5" stroke-dasharray="3 4"/>
+<rect x="107" y="320" width="200" height="34" rx="17" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="207" y="341" text-anchor="middle" font-size="10.5" font-weight="700" fill="#FF4438">ONE-TIME PROMPT, APRIL 26 2021</text>
+
+<line x1="720" y1="120" x2="720" y2="380" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.5"/>
+<rect x="650" y="100" width="140" height="26" rx="13" fill="#0C0C0C"/>
+<text x="720" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#FFC400">TODAY, AUG 2026</text>
+
+<text x="400" y="430" text-anchor="middle" font-size="11" fill="#7A7A78">ATT happened once. ITP never stopped, and it isn't about opting in.</text>
+</svg>
