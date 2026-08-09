@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">PAID VS. ORGANIC CTR WHEN AN AI OVERVIEW APPEARS</text>
+<text x="400" y="54" text-anchor="middle" font-size="11" fill="#7A7A78">FEBRUARY 2026 SNAPSHOT</text>
+
+<line x1="60" y1="395" x2="740" y2="395" stroke="#0C0C0C" stroke-width="1.5"/>
+<line x1="400" y1="80" x2="400" y2="395" stroke="#7A7A78" stroke-width="1" stroke-dasharray="3 4"/>
+
+<text x="200" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">PAID CTR</text>
+<rect x="140" y="115" width="70" height="280" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="175" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">21.85%</text>
+<text x="175" y="412" text-anchor="middle" font-size="10.5" fill="#7A7A78">NO AIO</text>
+
+<rect x="230" y="187" width="70" height="208" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="265" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">16.21%</text>
+<text x="265" y="412" text-anchor="middle" font-size="10.5" fill="#7A7A78">AIO SHOWN</text>
+<text x="265" y="426" text-anchor="middle" font-size="11" font-weight="700" fill="#FF4438">-26%</text>
+
+<text x="595" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">ORGANIC CTR</text>
+<rect x="500" y="115" width="70" height="280" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="535" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">3.82%</text>
+<text x="535" y="412" text-anchor="middle" font-size="10.5" fill="#7A7A78">NO AIO</text>
+
+<rect x="590" y="222" width="70" height="173" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="625" y="215" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">2.36%</text>
+<text x="625" y="412" text-anchor="middle" font-size="10.5" fill="#7A7A78">AIO SHOWN</text>
+<text x="625" y="426" text-anchor="middle" font-size="11" font-weight="700" fill="#FF4438">-38%</text>
+
+<text x="400" y="443" text-anchor="middle" font-size="10.5" fill="#7A7A78">Seer Interactive, April 2026: 53 brands, 296.9M paid / 2.43B organic impressions.</text>
+</svg>

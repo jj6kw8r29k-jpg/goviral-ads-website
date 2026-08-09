@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">PAID CTR BY AI OVERVIEW CITATION STATUS</text>
+<text x="400" y="54" text-anchor="middle" font-size="11" fill="#7A7A78">2025 AVERAGE, INFORMATIONAL QUERIES</text>
+
+<line x1="60" y1="395" x2="740" y2="395" stroke="#0C0C0C" stroke-width="1.5"/>
+
+<rect x="130" y="75" width="90" height="320" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="175" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">19.75%</text>
+<text x="175" y="412" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">NO AI</text>
+<text x="175" y="426" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">OVERVIEW</text>
+
+<rect x="335" y="140" width="90" height="255" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="380" y="133" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">15.74%</text>
+<text x="380" y="412" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">AIO, BRAND</text>
+<text x="380" y="426" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">CITED</text>
+
+<rect x="540" y="214" width="90" height="181" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="585" y="207" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">11.19%</text>
+<text x="585" y="412" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">AIO, NOT</text>
+<text x="585" y="426" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0C0C0C">CITED</text>
+
+<line x1="425" y1="120" x2="630" y2="120" stroke="#0C0C0C" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="425" y1="115" x2="425" y2="125" stroke="#0C0C0C" stroke-width="1"/>
+<line x1="630" y1="115" x2="630" y2="125" stroke="#0C0C0C" stroke-width="1"/>
+<text x="527" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">41% GAP</text>
+
+<text x="400" y="443" text-anchor="middle" font-size="10.5" fill="#7A7A78">Seer Interactive, 2025 average: citation status moves CTR more than AIO presence alone.</text>
+</svg>
