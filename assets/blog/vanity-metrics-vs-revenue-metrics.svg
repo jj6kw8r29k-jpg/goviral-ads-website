@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">VANITY METRICS VS. REVENUE METRICS</text>
+<text x="400" y="54" text-anchor="middle" font-size="11" fill="#7A7A78">WHAT ACTUALLY PREDICTS A GOOGLE ADS ACCOUNT'S REVENUE</text>
+
+<line x1="400" y1="72" x2="400" y2="412" stroke="#7A7A78" stroke-width="1" stroke-dasharray="3 4"/>
+
+<text x="200" y="96" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FF4438">DOESN'T PREDICT REVENUE</text>
+<text x="600" y="96" text-anchor="middle" font-size="12.5" font-weight="700" fill="#00C853">PREDICTS REVENUE</text>
+
+<!-- left column: 3 vanity metrics -->
+<g>
+  <rect x="90" y="112" width="220" height="42" rx="8" fill="#FFFFFF" stroke="#FF4438" stroke-width="1.5"/>
+  <circle cx="115" cy="133" r="11" fill="#FF4438"/>
+  <text x="115" y="137" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">&#10005;</text>
+  <text x="137" y="137" font-size="12.5" font-weight="600" fill="#0C0C0C">Impressions</text>
+</g>
+<g>
+  <rect x="90" y="166" width="220" height="42" rx="8" fill="#FFFFFF" stroke="#FF4438" stroke-width="1.5"/>
+  <circle cx="115" cy="187" r="11" fill="#FF4438"/>
+  <text x="115" y="191" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">&#10005;</text>
+  <text x="137" y="191" font-size="12.5" font-weight="600" fill="#0C0C0C">Click-Through Rate</text>
+</g>
+<g>
+  <rect x="90" y="220" width="220" height="42" rx="8" fill="#FFFFFF" stroke="#FF4438" stroke-width="1.5"/>
+  <circle cx="115" cy="241" r="11" fill="#FF4438"/>
+  <text x="115" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">&#10005;</text>
+  <text x="137" y="245" font-size="12.5" font-weight="600" fill="#0C0C0C">Average Position</text>
+</g>
+<text x="200" y="300" text-anchor="middle" font-size="10.5" fill="#7A7A78">Measure attention.</text>
+<text x="200" y="316" text-anchor="middle" font-size="10.5" fill="#7A7A78">Say nothing about the</text>
+<text x="200" y="332" text-anchor="middle" font-size="10.5" fill="#7A7A78">click's actual value.</text>
+
+<!-- right column: 5 revenue metrics -->
+<g>
+  <rect x="490" y="108" width="220" height="40" rx="8" fill="#FFFFFF" stroke="#00C853" stroke-width="1.5"/>
+  <circle cx="515" cy="128" r="11" fill="#00C853"/>
+  <text x="515" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">&#10003;</text>
+  <text x="537" y="132" font-size="11.5" font-weight="600" fill="#0C0C0C">Conversion Rate</text>
+</g>
+<g>
+  <rect x="490" y="156" width="220" height="40" rx="8" fill="#FFFFFF" stroke="#00C853" stroke-width="1.5"/>
+  <circle cx="515" cy="176" r="11" fill="#00C853"/>
+  <text x="515" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">&#10003;</text>
+  <text x="537" y="180" font-size="11.5" font-weight="600" fill="#0C0C0C">Cost Per Conversion</text>
+</g>
+<g>
+  <rect x="490" y="204" width="220" height="40" rx="8" fill="#FFFFFF" stroke="#00C853" stroke-width="1.5"/>
+  <circle cx="515" cy="224" r="11" fill="#00C853"/>
+  <text x="515" y="228" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">&#10003;</text>
+  <text x="537" y="228" font-size="11.5" font-weight="600" fill="#0C0C0C">Revenue Per Click</text>
+</g>
+<g>
+  <rect x="490" y="252" width="220" height="40" rx="8" fill="#FFFFFF" stroke="#00C853" stroke-width="1.5"/>
+  <circle cx="515" cy="272" r="11" fill="#00C853"/>
+  <text x="515" y="276" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">&#10003;</text>
+  <text x="537" y="276" font-size="11.5" font-weight="600" fill="#0C0C0C">LTV : CAC Ratio</text>
+</g>
+<g>
+  <rect x="490" y="300" width="220" height="40" rx="8" fill="#FFFFFF" stroke="#00C853" stroke-width="1.5"/>
+  <circle cx="515" cy="320" r="11" fill="#00C853"/>
+  <text x="515" y="324" text-anchor="middle" font-size="12" font-weight="700" fill="#0C0C0C">&#10003;</text>
+  <text x="537" y="324" font-size="11.5" font-weight="600" fill="#0C0C0C">Profit-Adjusted ROAS</text>
+</g>
+
+<text x="400" y="440" text-anchor="middle" font-size="10.5" fill="#7A7A78">Three metrics describe activity. Five metrics decide whether the account makes money.</text>
+</svg>
