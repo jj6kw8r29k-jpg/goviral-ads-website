@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">WHERE THE CLICK CAN CONVERT VS. WHERE IT ACTUALLY LANDS</text>
+<text x="400" y="54" text-anchor="middle" font-size="11" fill="#7A7A78">CONVERSION RATE BY PAGE TYPE, GOOGLE ADS TRAFFIC</text>
+
+<line x1="60" y1="395" x2="740" y2="395" stroke="#0C0C0C" stroke-width="1.5"/>
+
+<rect x="140" y="315" width="100" height="80" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="190" y="306" text-anchor="middle" font-size="14" font-weight="700" fill="#0C0C0C">2.35%</text>
+<text x="190" y="412" text-anchor="middle" font-size="10.5" fill="#7A7A78">GENERAL WEBSITE PAGE</text>
+<text x="190" y="426" text-anchor="middle" font-size="9.5" fill="#7A7A78">(WordStream, 2026)</text>
+
+<rect x="350" y="169" width="100" height="226" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="400" y="160" text-anchor="middle" font-size="14" font-weight="700" fill="#0C0C0C">6.6%</text>
+<text x="400" y="412" text-anchor="middle" font-size="10.5" fill="#7A7A78">DEDICATED LANDING PAGE</text>
+<text x="400" y="426" text-anchor="middle" font-size="9.5" fill="#7A7A78">(Unbounce, median)</text>
+
+<rect x="560" y="115" width="100" height="280" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="610" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#0C0C0C">8.18%</text>
+<text x="610" y="412" text-anchor="middle" font-size="10.5" fill="#7A7A78">GOOGLE ADS SEARCH AVG.</text>
+<text x="610" y="426" text-anchor="middle" font-size="9.5" fill="#7A7A78">(LocaliQ, 2026)</text>
+
+<text x="400" y="443" text-anchor="middle" font-size="10.5" fill="#7A7A78">The average Google Ads click is capable of 8.18%. Most still land on a page converting near 2.35%.</text>
+</svg>

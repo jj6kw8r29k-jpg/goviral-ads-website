@@ -26,6 +26,7 @@ GoViral Ads runs three core offers: the Google Ads Proof Program (first month $6
 
 ## Articles
 
+- [Why Most Landing Pages Kill Your Google Ads Performance](https://goviralads.agency/landing-pages-kill-google-ads-performance): The median dedicated landing page converts at 6.6% (Unbounce) and Google Ads search averages 8.18% (LocaliQ), but a general website page averages just 2.35% (WordStream). Five real reasons landing pages underconvert Google Ads traffic, from message match to mobile testing.
 - [The 5 Google Ads Metrics That Actually Predict Revenue](https://goviralads.agency/google-ads-metrics-that-predict-revenue): CTR and impressions don't predict revenue. Conversion rate, cost per conversion weighed against margin, revenue per click, LTV:CAC ratio and profit-adjusted ROAS do, with real GoViral client account data from 632% to 1,800% ROAS.
 - [AI Overviews Are Already Cutting Your Google Ads CTR By 26%](https://goviralads.agency/ai-overviews-google-ads-ctr): Paid Google Ads CTR falls 26% and organic CTR falls 38% on queries where an AI Overview appears (Seer Interactive, April 2026). Citation status inside the AI Overview, not its mere presence, is the biggest lever advertisers control.
 - [In-House vs. Agency: The Real Cost Comparison Nobody Shows You](https://goviralads.agency/in-house-vs-agency-marketing-cost-2026): A full-time in-house marketer costs $144K to $161K a year fully loaded (Salary.com, SHRM), versus $500 to $20,000+ a month for an agency retainer. The real math on when each one actually makes sense.
