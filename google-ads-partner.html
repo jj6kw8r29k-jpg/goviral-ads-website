@@ -28,15 +28,25 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Google Ads Management, 30-Day Target Guarantee", "description": "Founder-led Google Ads management. A performance target is agreed before work starts. If the target is missed in the first 30 days, the client does not pay for that month. No long-term contracts.", "url": "https://goviralads.agency/google-ads-partner", "provider": {"@type": "Organization", "name": "GoViral Ads", "url": "https://goviralads.agency/"}, "areaServed": "Worldwide"}</script>
   <style>
     /* Page-scoped components. Kept off the shared stylesheet so the other 60 pages cannot regress. */
+    /* Notice, not a button. Every .btn on this site is a 12px-radius pill with a 4px hard
+       shadow, so the guarantee deliberately has neither: square corners, no shadow, and a
+       mono label above the line. Buttons never carry labels. */
     .guarantee {
-      display: block; margin: 26px auto 0; padding: 20px 30px; max-width: 760px;
+      display: block; margin: 30px auto 0; padding: 22px 28px; max-width: 800px;
       background: var(--yellow); border: 1.5px solid var(--ink);
-      border-radius: 14px; box-shadow: 6px 6px 0 var(--ink);
+      border-radius: 4px;
       font-family: var(--font-display); font-weight: 800; line-height: 1.22;
       font-size: clamp(1.1rem, 2.4vw, 1.6rem); letter-spacing: -0.02em;
+      cursor: default;
+    }
+    .guarantee__label {
+      display: block; margin-bottom: 12px; padding-bottom: 12px;
+      border-bottom: 1.5px dashed rgba(12,12,12,0.35);
+      font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
     }
     .guarantee small {
-      display: block; margin-top: 10px; font-family: var(--font-mono);
+      display: block; margin-top: 12px; font-family: var(--font-mono);
       font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
     }
     /* Dark authority band, mirrors the competitor's stat strip */
@@ -47,16 +57,24 @@
     .authority__num { display: block; font-family: var(--font-mono); font-weight: 700; font-size: clamp(1.25rem, 2.6vw, 2rem); letter-spacing: -0.02em; line-height: 1.1; }
     .authority__label { display: block; margin-top: 8px; font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(244,244,242,0.6); }
     /* Before/after proof tile. Numbers are live text so they stay readable on a phone. */
-    .ba { background: var(--white); border: 1.5px solid var(--ink); border-radius: var(--radius-lg); overflow: hidden; }
-    .ba__head { padding: 24px 24px 20px; }
+    /* Results tile: screenshot on top, then label, headline and an explanation line,
+       same reading order as the competitor's results grid. */
+    .ba { background: var(--white); border: 1.5px solid var(--ink); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; }
+    .ba__head { padding: 22px 24px 24px; }
     .ba__label { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--grey); }
     .ba__nums { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 14px; font-family: var(--font-mono); font-weight: 700; letter-spacing: -0.02em; }
     .ba__from { font-size: clamp(1rem, 2.2vw, 1.45rem); color: var(--grey); }
     .ba__arrow { font-size: clamp(1rem, 2.2vw, 1.45rem); }
     .ba__to { font-size: clamp(1.6rem, 4.6vw, 2.7rem); line-height: 1.05; }
     .ba__note { margin-top: 12px; font-size: 0.95rem; color: var(--grey); line-height: 1.5; }
-    .ba__media { border-top: 1.5px solid var(--ink); background: var(--paper); }
-    .ba__media img { width: 100%; }
+    /* Source dashboards range from 0.32 to 0.54 in height/width, which made the grid ragged.
+       Locked to one ratio and anchored to the top, so every tile lines up and the metric row
+       at the top of each screenshot survives the crop. The chart tail is the only thing lost,
+       and the numbers are already live text above. */
+    .ba__media { border-bottom: 1.5px solid var(--ink); background: var(--paper); overflow: hidden; }
+    /* Ratio sits on the img, not the wrapper: inside a column flex parent a wrapper with
+       aspect-ratio plus a height:100% child resolves circularly and collapses to 0. */
+    .ba__media img { display: block; width: 100%; aspect-ratio: 2.9 / 1; object-fit: cover; object-position: top center; }
     /* Hero proof card, dark, numbers above the receipt */
     .proof-card { border: 1.5px solid var(--ink); border-radius: var(--radius-lg); box-shadow: 8px 8px 0 var(--ink); overflow: hidden; background: var(--ink); color: var(--paper); }
     .proof-card__tag { padding: 14px 22px; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,244,242,0.72); border-bottom: 1px solid rgba(244,244,242,0.18); }
@@ -71,6 +89,14 @@
       .authority__item:nth-child(-n+2) { border-bottom: 1px solid rgba(244,244,242,0.18); }
       .authority__item:nth-child(2n) { border-right: 0; }
     }
+    /* Testimonial wall. CSS columns rather than a 3-up grid because there are 7 quotes of
+       uneven length: a grid leaves an orphan on the last row, columns balance them. */
+    .tsl-wall { columns: 3; column-gap: 24px; }
+    .tsl-wall > * { break-inside: avoid; -webkit-column-break-inside: avoid; margin-bottom: 24px; }
+    @media (max-width: 1024px) { .tsl-wall { columns: 2; } }
+    @media (max-width: 640px) { .tsl-wall { columns: 1; } }
+    /* Quotes without a headshot: keep the name block aligned with the ones that have one. */
+    .tsl__person--noface { padding-top: 18px; border-top: 1px dashed var(--line-strong); margin-top: auto; }
     /* The floating logo clips off the left edge on phones, and Meta traffic is mostly phones. */
     /* !important because the element carries an inline display:grid */
     @media (max-width: 640px) { .hero-float-logo { display: none !important; } }
@@ -103,7 +129,7 @@
           <span class="tag tag--ink">Proof Before Partnership™ · Google Ads Management</span>
           <h1 class="display-xl" style="margin:24px auto 0; max-width:920px; font-size:clamp(2rem,4.6vw,3.5rem);">Give Us <span class="hl-under">30 Days</span>. We'll Make Your Google Ads <span class="hl-under">More Profitable</span>.</h1>
 
-          <p class="guarantee">If We Don't Hit Your Agreed Target, You Don't Pay.
+          <p class="guarantee"><span class="guarantee__label">The Guarantee</span>If We Don't Hit Your Agreed Target, You Don't Pay.
             <small>You set the target with us before we touch the account</small>
           </p>
 
@@ -114,43 +140,8 @@
           <p class="mono" style="margin-top:6px; font-size:0.72rem; color:var(--grey);">Built for accounts spending $6,000 a month or more on Google Ads.</p>
         </div>
 
-        <!-- HERO PROOF: numbers as live text, dashboard as the receipt -->
-        <div class="reveal" style="max-width:900px; margin:52px auto 0; position:relative;">
-          <div class="proof-card" data-tilt="3">
-            <div class="proof-card__tag">Google Ads revenue · Real client account</div>
-            <div class="proof-card__nums">
-              <div class="proof-card__num"><b>€3,037,972</b><span>Sales</span></div>
-              <div class="proof-card__num"><b>+195%</b><span>Growth</span></div>
-              <div class="proof-card__num"><b>4.19</b><span>ROAS</span></div>
-            </div>
-            <div class="proof-card__media">
-              <img src="assets/case-studies/google-3-04m-store-revenue.jpg" alt="Client dashboard: €3,037,972 in sales, up 195.07%, on €764,042 of Google Ads spend at 4.19 ROAS" />
-            </div>
-          </div>
-          <span class="hero__badge anim-pulse" style="top:-18px; right:14px;">€764,042 AD SPEND</span>
-          <div class="anim-float hero-float-logo" style="position:absolute; bottom:-26px; left:-26px; width:88px; height:88px; background:var(--white); border:1.5px solid var(--ink); border-radius:20px; box-shadow:4px 4px 0 var(--ink); display:grid; place-items:center; transform:rotate(-6deg); padding:14px;" aria-hidden="true">
-            <img src="assets/brand/google-ads-logo.webp" alt="Google Ads" style="width:100%; height:100%; object-fit:contain;" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= AUTHORITY BAND ================= -->
-    <section class="authority">
-      <div class="container" style="padding-left:0; padding-right:0;">
-        <div class="authority__grid">
-          <div class="authority__item"><span class="authority__num">$104M+</span><span class="authority__label">Revenue Generated</span></div>
-          <div class="authority__item"><span class="authority__num">1,460%</span><span class="authority__label">Peak Account ROAS</span></div>
-          <div class="authority__item"><span class="authority__num">13.30</span><span class="authority__label">Best Month ROAS</span></div>
-          <div class="authority__item"><span class="authority__num">1</span><span class="authority__label">Person Runs Your Account</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PRESS ================= -->
-    <section class="section--tight">
-      <div class="container">
-        <div class="reveal" style="text-align:center;">
+        <!-- AS FEATURED IN -->
+        <div class="reveal" style="margin-top:40px;">
           <p class="mono" style="font-size:0.7rem; font-weight:700; letter-spacing:0.1em; color:var(--grey); margin-bottom:20px;">AS FEATURED IN</p>
           <div class="press-strip">
             <div class="press-strip__track">
@@ -165,71 +156,129 @@
             </div>
           </div>
         </div>
+
+        <!-- HERO PROOF: numbers as live text, dashboard as the receipt -->
+        <div class="reveal" style="max-width:900px; margin:48px auto 0; position:relative;">
+          <div class="proof-card" data-tilt="3">
+            <div class="proof-card__tag">Google Ads · Real client account</div>
+            <div class="proof-card__nums">
+              <div class="proof-card__num"><b>$27.2M</b><span>Revenue</span></div>
+              <div class="proof-card__num"><b>14.62</b><span>ROAS</span></div>
+              <div class="proof-card__num"><b>$1.86M</b><span>Ad Spend</span></div>
+            </div>
+            <div class="proof-card__media">
+              <img src="assets/case-studies/google-27-2m-1460-roas.png" alt="Google Ads dashboard: $1.86M cost and 640K clicks producing $27.2M in conversion value at 14.62 return on ad spend" />
+            </div>
+          </div>
+          <span class="hero__badge anim-pulse" style="top:-18px; right:14px;">640K CLICKS</span>
+          <div class="anim-float hero-float-logo" style="position:absolute; bottom:-26px; left:-26px; width:88px; height:88px; background:var(--white); border:1.5px solid var(--ink); border-radius:20px; box-shadow:4px 4px 0 var(--ink); display:grid; place-items:center; transform:rotate(-6deg); padding:14px;" aria-hidden="true">
+            <img src="assets/brand/google-ads-logo.webp" alt="Google Ads" style="width:100%; height:100%; object-fit:contain;" />
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ================= BEFORE / AFTER PROOF ================= -->
+    <!-- ================= AUTHORITY BAND ================= -->
+    <section class="authority">
+      <div class="container" style="padding-left:0; padding-right:0;">
+        <div class="authority__grid">
+          <div class="authority__item"><span class="authority__num">$104M+</span><span class="authority__label">Ad Spend Managed</span></div>
+          <div class="authority__item"><span class="authority__num">1,460%</span><span class="authority__label">Peak Account ROAS</span></div>
+          <div class="authority__item"><span class="authority__num">13.30</span><span class="authority__label">Best Month ROAS</span></div>
+          <div class="authority__item"><span class="authority__num">Founder</span><span class="authority__label">Runs Your Account. No Juniors.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESULTS ================= -->
     <section class="section" style="background:var(--white); border-top:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink); padding-top:clamp(48px,6vw,88px);">
       <div class="container">
         <div class="section-head reveal">
-          <span class="kicker">Real Accounts, Real Money</span>
-          <h2 class="display-lg">Same Budget. More Revenue. Every Month.</h2>
-          <p class="lead muted" style="margin-top:18px;">Not lifetime totals. What the account was doing before, and what it was doing after.</p>
+          <span class="kicker">Results That Showed Up In The Business</span>
+          <h2 class="display-lg">More Revenue. Better Returns. Less Wasted Spend.</h2>
+          <p class="lead muted" style="margin-top:18px;">Six real accounts. What went in, what came out, and what changed while we ran it.</p>
         </div>
 
         <div class="grid-2 reveal-stagger">
+
           <div class="ba">
+            <div class="ba__media"><img src="assets/case-studies/google-1-4m-to-2-7m-monthly.webp" alt="Google Ads dashboard comparing February 2025 conversion value of $1,417,392 at 8.26 ROAS to July 2025 conversion value of $2,737,095 at 13.30 ROAS" loading="lazy" /></div>
             <div class="ba__head">
-              <span class="ba__label">Ecommerce · Monthly Revenue</span>
+              <span class="ba__label">Ecommerce · Monthly revenue, before and after</span>
               <div class="ba__nums">
                 <span class="ba__from">$1.42M</span>
                 <span class="ba__arrow">↗</span>
                 <span class="ba__to">$2.74M</span>
               </div>
-              <p class="ba__note">February 2025 to July 2025. ROAS climbed from 8.26 to 13.30 across the same window.</p>
+              <p class="ba__note">Monthly revenue nearly doubled between February and July 2025, and it got cheaper to earn: ROAS climbed from 8.26 to 13.30 over the same window.</p>
             </div>
-            <div class="ba__media"><img src="assets/case-studies/google-1-4m-to-2-7m-monthly.webp" alt="Google Ads dashboard comparing February 2025 conversion value of $1,417,392 at 8.26 ROAS to July 2025 conversion value of $2,737,095 at 13.30 ROAS" loading="lazy" /></div>
           </div>
 
           <div class="ba">
+            <div class="ba__media"><img src="assets/case-studies/google-77k-to-289k-monthly.webp" alt="Google Ads dashboard comparing January 2025 conversion value of $76,781 at 2.59 ROAS to August 2025 conversion value of $288,803 at 5.07 ROAS" loading="lazy" /></div>
             <div class="ba__head">
-              <span class="ba__label">Ecommerce · Monthly Revenue</span>
+              <span class="ba__label">Ecommerce · Monthly revenue, before and after</span>
               <div class="ba__nums">
                 <span class="ba__from">$76.8K</span>
                 <span class="ba__arrow">↗</span>
                 <span class="ba__to">$288.8K</span>
               </div>
-              <p class="ba__note">January 2025 to August 2025. ROAS climbed from 2.59 to 5.07. Fewer clicks, better clicks, nearly four times the revenue.</p>
+              <p class="ba__note">Nearly four times the monthly revenue by August 2025 on fewer clicks, not more. ROAS went from 2.59 to 5.07 because the budget stopped chasing traffic that never bought.</p>
             </div>
-            <div class="ba__media"><img src="assets/case-studies/google-77k-to-289k-monthly.webp" alt="Google Ads dashboard comparing January 2025 conversion value of $76,781 at 2.59 ROAS to August 2025 conversion value of $288,803 at 5.07 ROAS" loading="lazy" /></div>
           </div>
-        </div>
 
-        <div class="reveal" style="text-align:center; margin-top:56px;">
-          <p class="mono" style="font-size:0.72rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--grey);">More accounts, same process. Lifetime totals.</p>
-        </div>
+          <div class="ba">
+            <div class="ba__media"><img src="assets/case-studies/google-22-9m-632-roas.webp" alt="Google Ads dashboard showing $3.62M of spend generating $22.9M in conversion value at 632% ROAS" loading="lazy" /></div>
+            <div class="ba__head">
+              <span class="ba__label">Lead Gen · Spend into conversion value</span>
+              <div class="ba__nums">
+                <span class="ba__from">$3.62M</span>
+                <span class="ba__arrow">↗</span>
+                <span class="ba__to">$22.9M</span>
+              </div>
+              <p class="ba__note">$3.62M of spend turned into $22.9M in conversion value, a 632% return, after the conversion signals feeding the bidding were rebuilt.</p>
+            </div>
+          </div>
 
-        <div class="grid-4 reveal-stagger" style="margin-top:24px;">
-          <div class="case card card--static" style="padding:14px; background:var(--white);">
-            <div class="case__media"><img src="assets/case-studies/google-27-2m-1460-roas.png" alt="Google Ads dashboard showing $27.2M in conversion value at 1,460% ROAS" loading="lazy" /></div>
-            <div class="case__meta"><span>Ecommerce</span><span>1,460%</span></div>
-            <p class="case__title" style="font-size:1.05rem;">$27.2M generated.</p>
+          <div class="ba">
+            <div class="ba__media"><img src="assets/case-studies/google-10-8m-1345-roas.webp" alt="Google Ads dashboard showing $806K of spend generating $10.8M in conversion value at 1,345% ROAS" loading="lazy" /></div>
+            <div class="ba__head">
+              <span class="ba__label">Lead Gen · Spend into conversion value</span>
+              <div class="ba__nums">
+                <span class="ba__from">$806K</span>
+                <span class="ba__arrow">↗</span>
+                <span class="ba__to">$10.8M</span>
+              </div>
+              <p class="ba__note">$806K of spend returned $10.8M in conversion value, a 1,345% return. Thirteen dollars back for every dollar in.</p>
+            </div>
           </div>
-          <div class="case card card--static" style="padding:14px; background:var(--white);">
-            <div class="case__media"><img src="assets/case-studies/google-22-9m-632-roas.webp" alt="Google Ads dashboard showing $22.9M in conversion value at 632% ROAS" loading="lazy" /></div>
-            <div class="case__meta"><span>Lead Gen</span><span>632%</span></div>
-            <p class="case__title" style="font-size:1.05rem;">$22.9M generated.</p>
+
+          <div class="ba">
+            <div class="ba__media"><img src="assets/case-studies/google-5-06m-964-roas.png" alt="Google Ads dashboard showing $524K of spend generating $5.06M in sales at 964% ROAS" loading="lazy" /></div>
+            <div class="ba__head">
+              <span class="ba__label">Ecommerce · Spend into sales</span>
+              <div class="ba__nums">
+                <span class="ba__from">$524K</span>
+                <span class="ba__arrow">↗</span>
+                <span class="ba__to">$5.06M</span>
+              </div>
+              <p class="ba__note">$524K of spend turned into $5.06M in sales at a 964% return, scaled without the ROAS falling apart on the way up.</p>
+            </div>
           </div>
-          <div class="case card card--static" style="padding:14px; background:var(--white);">
-            <div class="case__media"><img src="assets/case-studies/google-10-8m-1345-roas.webp" alt="Google Ads dashboard showing $10.8M in conversion value at 1,345% ROAS" loading="lazy" /></div>
-            <div class="case__meta"><span>Ecommerce</span><span>1,345%</span></div>
-            <p class="case__title" style="font-size:1.05rem;">$10.8M generated.</p>
+
+          <div class="ba">
+            <div class="ba__media"><img src="assets/case-studies/google-1-74m-880-roas.png" alt="Google Ads dashboard showing $198K of spend generating $1.74M in sales at 880% ROAS" loading="lazy" /></div>
+            <div class="ba__head">
+              <span class="ba__label">Ecommerce · Spend into sales</span>
+              <div class="ba__nums">
+                <span class="ba__from">$198K</span>
+                <span class="ba__arrow">↗</span>
+                <span class="ba__to">$1.74M</span>
+              </div>
+              <p class="ba__note">$198K of spend turned into $1.74M in sales, an 880% return, on a smaller budget than most agencies will take on.</p>
+            </div>
           </div>
-          <div class="case card card--static" style="padding:14px; background:var(--white);">
-            <div class="case__media"><img src="assets/case-studies/google-5-06m-964-roas.png" alt="Google Ads dashboard showing $524K of spend generating $5.06M at 964% ROAS" loading="lazy" /></div>
-            <div class="case__meta"><span>Ecommerce</span><span>964%</span></div>
-            <p class="case__title" style="font-size:1.05rem;">$524K into $5.06M.</p>
-          </div>
+
         </div>
 
         <div class="reveal" style="text-align:center; margin-top:48px;">
@@ -241,49 +290,10 @@
     <!-- ================= WINS MARQUEE ================= -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>$1.42M/mo to $2.74M/mo</span><span>8.26 ROAS to 13.30 ROAS</span><span>$76.8K/mo to $288.8K/mo</span><span>2.59 ROAS to 5.07 ROAS</span><span>€3.04M in sales, up 195%</span><span>$27.2M at 1,460% ROAS</span>
-        <span>$1.42M/mo to $2.74M/mo</span><span>8.26 ROAS to 13.30 ROAS</span><span>$76.8K/mo to $288.8K/mo</span><span>2.59 ROAS to 5.07 ROAS</span><span>€3.04M in sales, up 195%</span><span>$27.2M at 1,460% ROAS</span>
+        <span>$1.42M/mo to $2.74M/mo</span><span>8.26 ROAS to 13.30 ROAS</span><span>$76.8K/mo to $288.8K/mo</span><span>$3.62M spend to $22.9M</span><span>$806K spend to $10.8M</span><span>$27.2M at 14.62 ROAS</span>
+        <span>$1.42M/mo to $2.74M/mo</span><span>8.26 ROAS to 13.30 ROAS</span><span>$76.8K/mo to $288.8K/mo</span><span>$3.62M spend to $22.9M</span><span>$806K spend to $10.8M</span><span>$27.2M at 14.62 ROAS</span>
       </div>
     </div>
-
-    <!-- ================= THE JUNIOR PROBLEM ================= -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Why This Is Different</span>
-          <h2 class="display-lg">You Hired An Agency. You Got A Junior.</h2>
-          <p class="lead" style="margin-top:20px;">The big agencies advertise how many clients they have. Think about what that number actually means. A thousand accounts do not get a thousand strategists. They get a template, a shared inbox, and whoever was hired last.</p>
-          <p class="display-sm" style="margin-top:20px;">Scale is their selling point. It is also the reason your account is on autopilot.</p>
-        </div>
-
-        <div class="compare reveal">
-          <div class="compare__col">
-            <div class="compare__head">The 1,000-Client Agency</div>
-            <ul>
-              <li>Your account goes to a junior you never meet</li>
-              <li>The same playbook running on a thousand accounts</li>
-              <li>A monthly report that explains the drop instead of fixing it</li>
-              <li>Locked into a contract before you see a single result</li>
-              <li>You carry all of the risk</li>
-            </ul>
-          </div>
-          <div class="compare__col compare__col--win">
-            <div class="compare__head">GoViral Ads</div>
-            <ul>
-              <li>The founder runs your account. Every day.</li>
-              <li>Built around your margins, your products, your market</li>
-              <li>You see inside the account whenever you want</li>
-              <li>No long-term contract. Month to month.</li>
-              <li>We carry the risk. Miss the target, you don't pay.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="reveal" style="max-width:680px; margin:56px auto 0; text-align:center;">
-          <p class="lead">This is why the client list is capped. One person can run a handful of accounts properly. He cannot run a thousand. That is not scarcity marketing, it is arithmetic.</p>
-        </div>
-      </div>
-    </section>
 
     <!-- ================= HOW THE 30 DAYS WORK ================= -->
     <section class="section" style="background:var(--white); border-top:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink);">
@@ -295,7 +305,7 @@
         <div class="grid-3 reveal-stagger">
           <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">You set the target</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">We look at your last 90 days together and agree on one number that would make the next 30 days worth it. Revenue, ROAS or cost per lead. Your call, in writing.</p></div>
           <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">We rebuild, you watch</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">Structure, match types, negatives, bidding, tracking, feed. You keep full access the whole time. Nothing happens in your account that you cannot see.</p></div>
-          <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">We hit it or we don't invoice</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">Day 30 we compare against the number you set. If we missed it, you don't pay for that month and you keep every change we made.</p></div>
+          <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">We hit it or we don't invoice</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">Day 30 we compare against the number you set. If we missed it, you don't pay us to manage your account.</p></div>
         </div>
         <div class="reveal" style="text-align:center; margin-top:48px;">
           <a href="https://calendly.com/buildbraand/goviral-ads-strategy-meet" target="_blank" rel="noopener" class="btn btn--ink btn--lg">Book My Strategy Call <span class="arr">↗</span></a>
@@ -311,7 +321,13 @@
           <span class="kicker">In Their Words</span>
           <h2 class="display-lg">The Results Speak. So Do Our Clients.</h2>
         </div>
-        <div class="tsl reveal-stagger">
+        <div class="tsl-wall reveal-stagger">
+          <div class="card tsl__card">
+            <p class="tsl__quote">Our PMax campaigns were at 3.5 ROAS before GoViral. After giving our account to them, we reached 5.2 ROAS while spending 3X more on ads.</p>
+            <div class="tsl__person--noface">
+              <div class="tsl__name">Cris Themme</div><div class="tsl__role">Supplement Brand Owner</div>
+            </div>
+          </div>
           <div class="card tsl__card">
             <p class="tsl__quote">We'd already worked with multiple agencies before GoViral. They were the first team that actually explained why our account wasn't scaling. Within weeks our acquisition costs dropped significantly.</p>
             <div class="tsl__person">
@@ -320,10 +336,28 @@
             </div>
           </div>
           <div class="card tsl__card">
+            <p class="tsl__quote">After working with GoViral, we've scaled our Google Ads from $16K to $501K while maintaining profitability.</p>
+            <div class="tsl__person--noface">
+              <div class="tsl__name">Marcus Qubin</div><div class="tsl__role">Fashion eCommerce Brand Owner</div>
+            </div>
+          </div>
+          <div class="card tsl__card">
+            <p class="tsl__quote">They cleaned up our account and revived our ROAS from 2.2 to 3.9 in just 30 days. Akshat and his team are extremely responsive and communicative throughout the entire process.</p>
+            <div class="tsl__person--noface">
+              <div class="tsl__name">Serina Wills</div><div class="tsl__role">eCommerce Business Owner</div>
+            </div>
+          </div>
+          <div class="card tsl__card">
             <p class="tsl__quote">Every recommendation was backed by data. No fluff, no guessing. Just clear strategy that produced measurable growth month after month.</p>
             <div class="tsl__person">
               <img src="assets/headshots/sophiya-carter.webp" alt="Sophiya Carter, DTC Brand Owner" loading="lazy" />
               <div><div class="tsl__name">Sophiya Carter</div><div class="tsl__role">DTC Brand Owner</div></div>
+            </div>
+          </div>
+          <div class="card tsl__card">
+            <p class="tsl__quote">They provided a very detailed audit, and we got the promised results within 30 days.</p>
+            <div class="tsl__person--noface">
+              <div class="tsl__name">Oskar Thorvaldson</div><div class="tsl__role">Chemical Bulk Supplier</div>
             </div>
           </div>
           <div class="card tsl__card">
@@ -347,7 +381,7 @@
         <div class="faq reveal">
           <div class="faq__item">
             <button class="faq__q">What does "you don't pay" actually mean? <span class="arr">→</span></button>
-            <div class="faq__a"><div class="faq__a-inner">If we miss the target you set, we don't invoice you for that month. No argument, no partial credit, no clawing it back later. You also keep every change we made to the account.</div></div>
+            <div class="faq__a"><div class="faq__a-inner">If we miss the target you set, you don't pay us to manage your account that month. No argument, no partial credit, no clawing it back later. Your ad spend is your ad spend, that always goes to Google. What you don't pay is us.</div></div>
           </div>
           <div class="faq__item">
             <button class="faq__q">Who decides the target, and how? <span class="arr">→</span></button>
@@ -398,7 +432,7 @@
           <span class="kicker kicker--light" style="justify-content:center;">We Carry The Risk. You Don't.</span>
           <h2 class="display-lg" style="color:var(--paper); max-width:780px; margin:0 auto;">Give Us 30 Days And Your Google Ads Account.</h2>
           <p style="color:rgba(244,244,242,0.65); margin:20px auto 32px; max-width:620px;">
-            You set the target. We rebuild the account. If we miss it, you don't pay for that month and you keep the work. No long-term contract either way.
+            You set the target. We rebuild the account. If we miss it, you don't pay us to manage it. No long-term contract either way.
           </p>
           <a href="https://calendly.com/buildbraand/goviral-ads-strategy-meet" target="_blank" rel="noopener" class="btn btn--lg">Book My Strategy Call <span class="arr">↗</span></a>
         </div>
