@@ -42,7 +42,7 @@ for f in pages:
             fails.append(f"JSON-LD INVALID: {f} block {i}: {e}")
 
 # 4. Platform-locked proof: LP pages may only show their own platform's case studies
-locks = {"google": ["google-ads.html", "google-ads-confirmed.html", "google-ads-audit-ecom.html", "google-ads-audit-leadgen.html"],
+locks = {"google": ["google-ads.html", "google-ads-confirmed.html", "google-ads-audit-ecom.html", "google-ads-audit-leadgen.html", "google-ads-partner.html"],
          "meta": ["meta-ads.html", "meta-ads-confirmed.html"],
          "seo": ["seo-autopilot.html", "seo-autopilot-confirmed.html"]}
 for platform, files in locks.items():
@@ -58,6 +58,7 @@ for platform, files in locks.items():
 assigned = {"google-ads.html": "buildbraand/google-ad-audit",
             "google-ads-audit-ecom.html": "buildbraand/google-ad-audit",
             "google-ads-audit-leadgen.html": "buildbraand/google-ad-audit",
+            "google-ads-partner.html": "buildbraand/goviral-ads-strategy-meet",
             "meta-ads.html": "buildbraand/ads-strategy-call",
             "seo-autopilot.html": "buildbraand/goviral-ads-strategy-meet-clone"}
 default = "buildbraand/goviral-ads-strategy-meet"
@@ -77,7 +78,7 @@ for f in pages:
             warns.append(f"CALENDLY: {f} uses non-default link(s) {sorted(bad)}")
 
 # 6. Squeeze pages: no navigation, no lead forms
-for f in ["google-ads.html", "google-ads-audit-ecom.html", "google-ads-audit-leadgen.html", "meta-ads.html", "seo-autopilot.html"]:
+for f in ["google-ads.html", "google-ads-audit-ecom.html", "google-ads-audit-leadgen.html", "google-ads-partner.html", "meta-ads.html", "seo-autopilot.html"]:
     s = open(f, encoding="utf-8").read()
     if re.search(r'<nav[\s>]', s):
         fails.append(f"SQUEEZE PURITY: {f} contains a <nav> element")
