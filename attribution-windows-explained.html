@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="google-site-verification" content="qJGjA2upkt8Q0Y8rVzHco3fXl8UX5GoJdVfzN64YceU" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attribution Windows Explained: Google vs. Meta | GoViral Ads</title>
+  <meta name="description" content="Google Ads defaults to a 30-day click window. Meta defaults to 7-day click, 1-day view. GA4 runs a third model. Here is why your platforms disagree." />
+  <link rel="icon" type="image/png" href="assets/brand/arrow-black.png" />
+  <link rel="canonical" href="https://goviralads.agency/attribution-windows-explained" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GoViral Ads" />
+  <meta property="og:title" content="Attribution Windows Explained: Why Your Ad Platforms Never Agree" />
+  <meta property="og:description" content="Google Ads defaults to a 30-day click window. Meta defaults to 7-day click, 1-day view. GA4 runs a third model. Here is why your platforms disagree." />
+  <meta property="og:url" content="https://goviralads.agency/attribution-windows-explained" />
+  <meta property="og:image" content="https://goviralads.agency/assets/og/home.png" />
+  <meta property="article:published_time" content="2026-08-26" />
+  <meta property="article:author" content="Akshat Singh" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Attribution Windows Explained: Why Your Ad Platforms Never Agree" />
+  <meta name="twitter:description" content="Google Ads defaults to a 30-day click window. Meta defaults to 7-day click, 1-day view. GA4 runs a third model. Here is why your platforms disagree." />
+  <meta name="twitter:image" content="https://goviralads.agency/assets/og/home.png" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Attribution Windows Explained: Why Your Ad Platforms Never Agree", "description": "Google Ads defaults to a 30-day click window. Meta defaults to 7-day click, 1-day view. GA4 runs a third model. Here is why your platforms disagree.", "url": "https://goviralads.agency/attribution-windows-explained", "image": "https://goviralads.agency/assets/og/home.png", "datePublished": "2026-08-26", "dateModified": "2026-08-26", "author": {"@type": "Person", "name": "Akshat Singh", "url": "https://goviralads.agency/about", "jobTitle": "Founder, GoViral Ads"}, "publisher": {"@type": "Organization", "name": "GoViral Ads", "url": "https://goviralads.agency/", "areaServed": {"@type": "Country", "name": "United States"}, "logo": {"@type": "ImageObject", "url": "https://goviralads.agency/assets/brand/logo-black.webp"}}, "mainEntityOfPage": "https://goviralads.agency/attribution-windows-explained", "articleSection": "Paid Advertising"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goviralads.agency/"}, {"@type": "ListItem", "position": 2, "name": "The Growth Playbook™", "item": "https://goviralads.agency/growth-playbook"}, {"@type": "ListItem", "position": 3, "name": "Attribution Windows Explained: Why Your Ad Platforms Never Agree", "item": "https://goviralads.agency/attribution-windows-explained"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an attribution window in advertising?", "acceptedAnswer": {"@type": "Answer", "text": "An attribution window, also called a look-back or conversion window, is the number of days a platform will credit an ad interaction, a click or a view, with a conversion that happens afterward. A 7-day click window means only conversions within 7 days of the click get credited to that ad. A conversion on day 8 gets credited somewhere else, or nowhere."}}, {"@type": "Question", "name": "Why does Google Ads show more conversions than Meta Ads for the same campaign?", "acceptedAnswer": {"@type": "Answer", "text": "Because Google Ads defaults to a wider look-back than Meta. Google's default click-through conversion window is 30 days, per Google's own Help Center, while Meta's default is 7-day click plus 1-day view. A customer who clicks a Google ad and buys 20 days later gets credited to Google. The same customer clicking a Meta ad and buying 20 days later gets credited to nothing, because Meta's window closed 13 days earlier."}}, {"@type": "Question", "name": "What is Meta's default attribution window in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "7-day click, 1-day engage-through, and 1-day view-through. Meta also redefined what counts as a click starting March 3, 2026: only link clicks that send someone to a website, app, or lead form now qualify for the 7-day click window. Likes, shares, saves, and comments moved to the new 1-day engage-through window instead."}}, {"@type": "Question", "name": "Does Google Analytics 4 use the same attribution model as Google Ads?", "acceptedAnswer": {"@type": "Answer", "text": "No. GA4's default is data-driven attribution, a model that weighs every touchpoint in a path rather than just the last click or a platform's own click and view window. It also requires at least 400 conversions for a specific action and 20,000 total conversions in the lookback window. Below that, GA4 silently falls back to last-click attribution without flagging the switch."}}, {"@type": "Question", "name": "Which attribution window should I actually trust?", "acceptedAnswer": {"@type": "Answer", "text": "None of them in isolation. Pick one system, usually GA4 tied to actual revenue or a CRM, as the source of truth for budget decisions, and read each platform's native reporting as a directional signal for that platform's own optimization, not as a number that adds up across platforms."}}]}</script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJRP59XG"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="nav__logo" aria-label="GoViral Ads home">
+          <img src="assets/brand/logo-black.webp" alt="GoViral Ads" />
+        </a>
+        <ul class="nav__links">
+          <li><a href="/">[ Home ]</a></li>
+          <li><a href="about">[ About ]</a></li>
+          <li class="nav__drop">
+            <a href="services">[ Services ]</a>
+            <div class="nav__dropdown">
+              <a href="google-ads"><span>Google Ads Proof Program™</span>First month for $800</a>
+              <a href="meta-ads"><span>Meta Growth Proof Program™</span>First month for $1,000</a>
+              <a href="seo-autopilot"><span>SEO Autopilot™</span>AI-powered SEO · $500/mo</a>
+              <a href="services"><span>View All Growth Services ↗</span></a>
+            </div>
+          </li>
+          <li><a href="growth-playbook" class="is-active">[ Playbook™ ]</a></li>
+          <li><a href="contact">[ Contact ]</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="https://calendly.com/buildbraand/goviral-ads-strategy-meet" target="_blank" rel="noopener" class="btn btn--ink btn--sm">Get My Growth Strategy <span class="arr">↗</span></a>
+          <button class="nav__burger" aria-label="Toggle menu"><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- ================= ARTICLE HERO ================= -->
+      <section class="section" style="padding-bottom:clamp(32px,4vw,48px);">
+        <div class="container">
+          <div class="article reveal">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a><span>/</span><a href="growth-playbook">The Growth Playbook™</a><span>/</span><span aria-current="page">Paid Advertising</span>
+            </nav>
+            <h1 class="display-lg" style="margin:24px 0;">Attribution Windows Explained: Why Your Ad Platforms Never Agree</h1>
+            <div class="article__meta">
+              <a href="/about"><img src="assets/founder/akshat-singh.jpg" alt="Akshat Singh, founder of GoViral Ads" /></a>
+              <span>By <a href="/about" style="color:inherit;">Akshat Singh</a></span><span>·</span><time datetime="2026-08-26">August 26, 2026</time><span>·</span><span>7 min read</span><span>·</span><span class="tag" style="font-size:0.62rem; padding:4px 10px;">Paid Advertising</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE BODY ================= -->
+      <section class="section" style="padding-top:0; background:var(--white); border-top:1.5px solid var(--ink);">
+        <div class="container">
+          <div class="article" style="padding-top:clamp(40px,5vw,64px);">
+            <div class="takeaways">
+              <h2>Key Takeaways</h2>
+              <ul>
+            <li>Google Ads defaults to a 30-day click-through conversion window (Google Ads Help). Meta defaults to 7-day click, 1-day engage-through, and 1-day view-through. The same sale can qualify on one platform and miss the window entirely on the other.</li>
+            <li>Meta redefined what counts as a "click" starting March 3, 2026: only link clicks now qualify for the 7-day click window. Likes, shares, saves, and comments moved to a separate 1-day engage-through window, which is why many advertisers saw reported conversions drop with no change in real performance.</li>
+            <li>GA4's default attribution model is data-driven, not last-click, but it silently falls back to last-click if an account has fewer than 400 conversions for that action or 20,000 total conversions in the lookback window, so many smaller accounts run on last-click without realizing it.</li>
+            <li>Adding up "conversions" reported by Google Ads, Meta Ads, and GA4 for the same period will almost always overcount real sales, because each platform can credit the same purchase using a different window and a different definition of the triggering interaction.</li>
+            <li>The fix isn't finding the "right" platform. It's picking one source of truth, usually GA4 tied to real revenue or a CRM, for budget decisions, and reading each ad platform's native numbers as directional, not comparable.</li>
+              </ul>
+            </div>
+
+<h2 id="witness-timelines">Ask Three Witnesses What Happened And You'll Get Three Different Timelines</h2>
+<p>A fender bender happens at a four-way stop. Witness one had been staring right at the intersection for the ten seconds before impact. Witness two only glanced up in the final three seconds, phone still in hand. Witness three runs the gas station across the street and pulls an hour of security footage before talking to police. All three watched the same crash. All three describe a different cause, because none of them were watching the same window of time before it happened.</p>
+<p>Ask any of them who's at fault and the honest answer depends entirely on how far back they were looking. That's not a flaw in any single witness. It's what happens when three observers use three different windows to judge one event.</p>
+<p>Your ad platforms do exactly this with every conversion. Google Ads looks back 30 days before a click. Meta looks back 7. Google Analytics 4 doesn't use a fixed window at all, it runs a model that can quietly fall back to a completely different method without telling you. Three dashboards, one sale, three different verdicts on what caused it.</p>
+
+<h2 id="default-windows">Google Defaults to a 30-Day Click Window. Meta Defaults to 7.</h2>
+<p>Google Ads will credit a conversion to an ad click that happened up to 30 days earlier, by default. Meta Ads stops counting after 7. A customer who clicks a Google ad on day one and buys on day 20 gets credited to that ad. The same customer clicking a Meta ad and buying on day 20 gets credited to nothing, because Meta's window closed 13 days earlier.</p>
+<p>Google's own Help Center sets the default click-through conversion window at 30 days, with presets available up to 90 days for longer sales cycles. Its engaged-view window, the credit given for someone who saw but didn't click an ad, defaults to just 3 days, and standard view-through credit defaults to 1 day. Search and Shopping campaigns carry no view-through credit at all by default. Meta's current default, after a January 2026 update removed the longer 7-day and 28-day view-through options from its API entirely, is 7-day click, 1-day engage-through, and 1-day view-through, the widest combination now available on the platform.</p>
+<p>Neither default is wrong. Google's wider window gives Smart Bidding more credit-signal density to train on, which suits how Google Ads decides who to show ads to next. Meta's narrower window keeps its reported numbers closer to same-week behavior. But a wider or narrower window changes which conversions get counted, not just how fast they get reported, and that's the part that breaks a side-by-side comparison.</p>
+
+<figure>
+  <img src="assets/blog/google-ads-vs-meta-attribution-window-timeline.svg" alt="Timeline diagram comparing Google Ads 30-day click attribution window to Meta Ads 7-day click attribution window, showing a customer conversion on day 20 credited by Google Ads but not credited by Meta Ads because its window closed on day 7" width="800" height="450" loading="lazy" />
+  <figcaption>Same customer, same click, same purchase. One dashboard counts it. One doesn't.</figcaption>
+</figure>
+
+<h2 id="meta-click-redefined">Meta Redefined What Counts As A "Click," Starting March 3, 2026</h2>
+<p>Before March 3, 2026, Meta's click-through attribution counted any interaction with an ad, a like, a share, a save, a comment, a profile tap, not just an actual click to a website or a lead form. After that date, only a link click that sends someone to a destination counts toward the 7-day click window. Everything else, likes, shares, saves, comments, moved to a new category called engage-through attribution, with a fixed 1-day window.</p>
+<p>That's a big enough change that many advertisers saw reported click-conversions drop in March 2026 with no change to their actual campaigns, budgets, or creative. The account didn't get worse. Meta just stopped counting some of what it used to count as a click.</p>
+<p>If a reporting dashboard, spreadsheet, or client deck compares this month's Meta numbers to a March or earlier baseline, that comparison is measuring a definition change, not a performance change, unless someone adjusted for it first.</p>
+
+<h2 id="ga4-third-model">GA4 Runs A Third Model, And Falls Back Without Telling You</h2>
+<p>Google Analytics 4's default attribution model is data-driven attribution, a model that weighs every touchpoint in a customer's path rather than crediting a single click or view inside a fixed window. It's a genuinely different approach than either Google Ads' or Meta's native reporting, which is part of why GA4 numbers rarely match either platform's own dashboard even when they're tracking the same account.</p>
+<p>It also comes with a data floor most accounts never check. Data-driven attribution requires at least 400 conversions for a specific conversion action and 20,000 total conversions across all actions within the lookback window. Fall short of either threshold and GA4 quietly switches that action to last-click attribution instead, without a banner, a warning, or anything in the interface flagging the switch. A smaller account can run on last-click for months while assuming it's getting the more sophisticated model.</p>
+<p>An April 2026 recalibration added one more moving part. GA4's default attribution lookback window for acquisition-stage conversion events dropped from 90 days to 30, while other conversion events kept their 90-day window. The same account can be running two different lookback windows on two different event types without anyone having changed a setting.</p>
+
+<h2 id="why-overcounts">Why Adding Up The Three Dashboards Always Overcounts</h2>
+<p>Add Google Ads' reported conversions, Meta's reported conversions, and GA4's reported conversions for the same month and the total will almost always be higher than the number of real sales that happened, because a single sale can get credited by more than one system using more than one definition of what caused it.</p>
+<p>A customer sees a Meta ad, doesn't click, buys three days later after a Google search. Meta's 1-day view-through window has already closed, so Meta doesn't claim it. Google Ads claims the click. GA4's data-driven model might assign partial credit to both touchpoints, or to neither, depending on how the rest of that customer's path looked. Three systems, three different amounts of credit, for one $400 purchase.</p>
+
+<figure>
+  <img src="assets/blog/one-sale-three-dashboards-attribution-overcount.svg" alt="Diagram showing one real 400 dollar sale getting independently credited as a separate conversion by Google Ads, Meta Ads, and GA4, illustrating why adding up platform-reported conversions overcounts real sales" width="800" height="450" loading="lazy" />
+  <figcaption>Add up platform-reported conversions and you're not measuring growth. You're measuring overlap.</figcaption>
+</figure>
+
+<p>None of the three numbers is fabricated. Each one is honestly reporting what its own window and its own model saw. The mistake isn't trusting any single platform's number. It's treating three platform-native numbers as if they're additive, comparable, or reconcilable without adjustment.</p>
+
+<h2 id="what-to-do">What Smart Businesses Are Doing About It</h2>
+<p>They stop treating each platform's native conversion count as the scoreboard and pick one source of truth instead, usually GA4 tied to actual revenue, or a CRM that only counts a closed deal once. Every platform's own dashboard still gets checked, but as a directional signal for that platform's own optimization, not as a number that gets added to another platform's number in a spreadsheet.</p>
+<p>That's also why every <a href="google-ads">Google Ads Proof Program™</a> engagement starts with a conversion tracking audit before a single bid changes, because a campaign built on top of numbers three platforms disagree about is optimizing toward a target that was never real to begin with.</p>
+
+            <div class="article-cta">
+              <p class="display-sm" style="color:var(--paper); font-size:1.3rem;">Not sure which number in your reports to actually trust? We'll tell you, free.</p>
+              <a href="google-ads" class="btn btn--lg">See The $800 Google Ads Proof Program™ ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ARTICLE FAQ ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker">FAQ</span>
+            <h2 class="display-md">Questions People Also Ask</h2>
+          </div>
+          <div class="faq reveal">
+          <div class="faq__item">
+            <button class="faq__q">What is an attribution window in advertising? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">An attribution window, also called a look-back or conversion window, is the number of days a platform will credit an ad interaction, a click or a view, with a conversion that happens afterward. A 7-day click window means only conversions within 7 days of the click get credited to that ad. A conversion on day 8 gets credited somewhere else, or nowhere.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">Why does Google Ads show more conversions than Meta Ads for the same campaign? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">Because Google Ads defaults to a wider look-back than Meta. Google's default click-through conversion window is 30 days, per Google's own Help Center, while Meta's default is 7-day click plus 1-day view. A customer who clicks a Google ad and buys 20 days later gets credited to Google. The same customer clicking a Meta ad and buying 20 days later gets credited to nothing, because Meta's window closed 13 days earlier.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">What is Meta's default attribution window in 2026? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">7-day click, 1-day engage-through, and 1-day view-through. Meta also redefined what counts as a click starting March 3, 2026: only link clicks that send someone to a website, app, or lead form now qualify for the 7-day click window. Likes, shares, saves, and comments moved to the new 1-day engage-through window instead.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">Does Google Analytics 4 use the same attribution model as Google Ads? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">No. GA4's default is data-driven attribution, a model that weighs every touchpoint in a path rather than just the last click or a platform's own click and view window. It also requires at least 400 conversions for a specific action and 20,000 total conversions in the lookback window. Below that, GA4 silently falls back to last-click attribution without flagging the switch.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">Which attribution window should I actually trust? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">None of them in isolation. Pick one system, usually GA4 tied to actual revenue or a CRM, as the source of truth for budget decisions, and read each platform's native reporting as a directional signal for that platform's own optimization, not as a number that adds up across platforms.</div></div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= RELATED ================= -->
+      <section class="section" style="padding-top:0;">
+        <div class="container">
+          <div class="section-head reveal" style="margin-bottom:32px;">
+            <span class="kicker">More From The Playbook™</span>
+          </div>
+          <div class="grid-2 reveal-stagger" style="max-width:900px; margin:0 auto;">
+          <a href="google-ads-metrics-that-predict-revenue" class="card" style="display:block;"><span class="card__arrow">↗</span><span class="mono" style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--grey);">Keep Reading</span><h3 class="display-sm" style="margin-top:10px;">The 5 Google Ads Metrics That Actually Predict Revenue</h3></a>
+          <a href="facebook-ads-stopped-working-not-ios" class="card" style="display:block;"><span class="card__arrow">↗</span><span class="mono" style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--grey);">Keep Reading</span><h3 class="display-sm" style="margin-top:10px;">The Real Reason Your Facebook Ads Stopped Working (It's Not iOS)</h3></a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__box">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/brand/logo-white.webp" alt="GoViral Ads" />
+          <p>We don't chase impressions. We engineer momentum. Growth × performance marketing for businesses that refuse to settle for average.</p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="google-ads">Google Ads Proof Program™</a></li>
+            <li><a href="meta-ads">Meta Growth Proof Program™</a></li>
+            <li><a href="seo-autopilot">SEO Autopilot™</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="growth-playbook">The Growth Playbook™</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy">Privacy Policy</a></li>
+            <li><a href="terms">Terms &amp; Conditions</a></li>
+            <li><a href="cookie-policy">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/go-viral-ads-agency/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.facebook.com/61578996099665/" target="_blank" rel="noopener">Facebook ↗</a></li>
+            <li><a href="https://www.instagram.com/goviral_ads_agency/?hl=en" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a href="https://www.youtube.com/@GoViralAdsAgency" target="_blank" rel="noopener">YouTube ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> GoViral Ads. All rights reserved.</span>
+        <span>Up and to the right. Always. ↗</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Tracking scripts: kept verbatim inside an inert <template>, activated on first interaction or after a 4s fallback, so they never block LCP/TBT. Pixel IDs and event calls below are byte-identical to the original, only the trigger timing changed. -->
+  <template id="deferred-trackers">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJRP59XG');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17583065677"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17583065677');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2188318194947797');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2188318194947797&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "rifvqmqves");
+  </script>
+  <!-- Snap Pixel Code -->
+  <script type='text/javascript'>
+  (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+  {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+  a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+  r.src=n;var u=t.getElementsByTagName(s)[0];
+  u.parentNode.insertBefore(r,u);})(window,document,
+  'https://sc-static.net/scevent.min.js');
+  snaptr('init', 'dcbebeec-9a31-4cf5-9ba7-018cde5ff673', {});
+  snaptr('track', 'PAGE_VIEW');
+  </script>
+  <!-- End Snap Pixel Code -->
+  <!-- Reddit Pixel -->
+  <script>
+  !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j6kvfm5qdek9",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j6kvfm5qdek9');rdt('track', 'PageVisit');
+  </script>
+  <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+  <!-- End Reddit Pixel -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMV365VRMY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZMV365VRMY');
+  </script>
+  </template>
+
+  <script>
+  (function () {
+    var loaded = false;
+    function loadTrackers() {
+      if (loaded) return;
+      loaded = true;
+      var tpl = document.getElementById('deferred-trackers');
+      if (!tpl) return;
+      var frag = tpl.content.cloneNode(true);
+      Array.prototype.forEach.call(frag.querySelectorAll('script'), function (oldScript) {
+        var newScript = document.createElement('script');
+        for (var i = 0; i < oldScript.attributes.length; i++) {
+          var attr = oldScript.attributes[i];
+          newScript.setAttribute(attr.name, attr.value);
+        }
+        newScript.textContent = oldScript.textContent;
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+      });
+      document.body.appendChild(frag);
+    }
+    ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (evt) {
+      window.addEventListener(evt, loadTrackers, { once: true, passive: true });
+    });
+    setTimeout(loadTrackers, 4000);
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">THE SAME CLICK, TWO DIFFERENT WINDOWS</text>
+<text x="400" y="54" text-anchor="middle" font-size="11" fill="#7A7A78">DEFAULT CLICK-THROUGH ATTRIBUTION WINDOW, GOOGLE ADS VS. META ADS</text>
+
+<line x1="510" y1="72" x2="510" y2="330" stroke="#0C0C0C" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.5"/>
+<text x="510" y="68" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0C0C0C">CUSTOMER CONVERTS: DAY 20</text>
+
+<text x="110" y="118" font-size="13" font-weight="700" fill="#0C0C0C">GOOGLE ADS: 30-DAY CLICK WINDOW</text>
+<rect x="110" y="128" width="600" height="38" fill="#2D6BFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<circle cx="510" cy="147" r="13" fill="#00C853" stroke="#0C0C0C" stroke-width="1.5"/>
+<path d="M502,147 l6,6 l13,-14" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="620" y="182" text-anchor="middle" font-size="10" fill="#7A7A78">CREDITED</text>
+
+<text x="110" y="222" font-size="13" font-weight="700" fill="#0C0C0C">META ADS: 7-DAY CLICK WINDOW</text>
+<rect x="110" y="232" width="140" height="38" fill="#FF4438" stroke="#0C0C0C" stroke-width="1.5"/>
+<circle cx="510" cy="251" r="13" fill="#FFFFFF" stroke="#FF4438" stroke-width="2"/>
+<line x1="503" y1="244" x2="517" y2="258" stroke="#FF4438" stroke-width="2.5"/>
+<line x1="517" y1="244" x2="503" y2="258" stroke="#FF4438" stroke-width="2.5"/>
+<line x1="250" y1="251" x2="497" y2="251" stroke="#7A7A78" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text x="510" y="288" text-anchor="middle" font-size="10" fill="#7A7A78">NOT CREDITED, WINDOW CLOSED DAY 7</text>
+
+<line x1="110" y1="330" x2="710" y2="330" stroke="#0C0C0C" stroke-width="1.5"/>
+<line x1="110" y1="325" x2="110" y2="335" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="110" y="352" text-anchor="middle" font-size="10.5" fill="#7A7A78">DAY 0 (CLICK)</text>
+<line x1="250" y1="325" x2="250" y2="335" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="250" y="352" text-anchor="middle" font-size="10.5" fill="#7A7A78">DAY 7</text>
+<line x1="510" y1="325" x2="510" y2="335" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="510" y="352" text-anchor="middle" font-size="10.5" fill="#7A7A78">DAY 20</text>
+<line x1="710" y1="325" x2="710" y2="335" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="710" y="352" text-anchor="middle" font-size="10.5" fill="#7A7A78">DAY 30</text>
+
+<text x="400" y="410" text-anchor="middle" font-size="11" fill="#0C0C0C" font-weight="700">Same customer. Same click. Same purchase. One dashboard counts it. One doesn't.</text>
+</svg>

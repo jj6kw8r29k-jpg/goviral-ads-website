@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono',monospace"><rect width="800" height="450" fill="#F4F4F2"/>
+<text x="400" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#0C0C0C">ONE SALE, THREE DASHBOARDS CLAIM CREDIT</text>
+<text x="400" y="54" text-anchor="middle" font-size="11" fill="#7A7A78">WHY ADDING UP PLATFORM-REPORTED CONVERSIONS OVERCOUNTS REAL SALES</text>
+
+<rect x="260" y="72" width="280" height="58" rx="10" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<text x="400" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#0C0C0C">1 REAL SALE</text>
+<text x="400" y="118" text-anchor="middle" font-size="10.5" fill="#7A7A78">$400 PURCHASE, ONE CUSTOMER</text>
+
+<path d="M400,130 L400,150 L150,150 L150,178" fill="none" stroke="#0C0C0C" stroke-width="1.5" marker-end="url(#arr1)"/>
+<path d="M400,130 L400,178" fill="none" stroke="#0C0C0C" stroke-width="1.5" marker-end="url(#arr1)"/>
+<path d="M400,130 L400,150 L650,150 L650,178" fill="none" stroke="#0C0C0C" stroke-width="1.5" marker-end="url(#arr1)"/>
+<defs><marker id="arr1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#0C0C0C"/></marker></defs>
+
+<rect x="50" y="182" width="200" height="150" rx="10" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="50" y="182" width="200" height="38" rx="10" fill="#2D6BFF"/>
+<rect x="50" y="208" width="200" height="12" fill="#2D6BFF"/>
+<text x="150" y="207" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FFFFFF">GOOGLE ADS</text>
+<text x="150" y="258" text-anchor="middle" font-size="17" font-weight="700" fill="#0C0C0C">+1 CONVERSION</text>
+<text x="150" y="280" text-anchor="middle" font-size="10" fill="#7A7A78">30-DAY CLICK WINDOW</text>
+<text x="150" y="312" text-anchor="middle" font-size="11" font-weight="700" fill="#00C853">CREDITED</text>
+
+<rect x="300" y="182" width="200" height="150" rx="10" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="300" y="182" width="200" height="38" rx="10" fill="#FF4438"/>
+<rect x="300" y="208" width="200" height="12" fill="#FF4438"/>
+<text x="400" y="207" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FFFFFF">META ADS</text>
+<text x="400" y="258" text-anchor="middle" font-size="17" font-weight="700" fill="#0C0C0C">+1 CONVERSION</text>
+<text x="400" y="280" text-anchor="middle" font-size="10" fill="#7A7A78">7-DAY CLICK WINDOW</text>
+<text x="400" y="312" text-anchor="middle" font-size="11" font-weight="700" fill="#00C853">CREDITED</text>
+
+<rect x="550" y="182" width="200" height="150" rx="10" fill="#FFFFFF" stroke="#0C0C0C" stroke-width="1.5"/>
+<rect x="550" y="182" width="200" height="38" rx="10" fill="#FFC400"/>
+<rect x="550" y="208" width="200" height="12" fill="#FFC400"/>
+<text x="650" y="207" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0C0C0C">GA4</text>
+<text x="650" y="258" text-anchor="middle" font-size="17" font-weight="700" fill="#0C0C0C">+1 CONVERSION</text>
+<text x="650" y="280" text-anchor="middle" font-size="10" fill="#7A7A78">DATA-DRIVEN MODEL</text>
+<text x="650" y="312" text-anchor="middle" font-size="11" font-weight="700" fill="#00C853">CREDITED</text>
+
+<rect x="140" y="356" width="520" height="56" rx="10" fill="#0C0C0C"/>
+<text x="400" y="380" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">3 CONVERSIONS REPORTED. 1 SALE HAPPENED.</text>
+<text x="400" y="399" text-anchor="middle" font-size="9.5" fill="#F4F4F2">ADD THE PLATFORM NUMBERS TOGETHER AND THIS IS WHAT YOU GET</text>
+
+<text x="400" y="432" text-anchor="middle" font-size="11" fill="#0C0C0C" font-weight="700">Add up platform-reported conversions and you're not measuring growth. You're measuring overlap.</text>
+</svg>
