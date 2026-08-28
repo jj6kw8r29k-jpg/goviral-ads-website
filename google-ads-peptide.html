@@ -92,8 +92,16 @@
       .authority__item:nth-child(-n+2) { border-bottom: 1px solid rgba(244,244,242,0.18); }
       .authority__item:nth-child(2n) { border-right: 0; }
     }
-    /* !important because the element carries an inline display:grid */
-    @media (max-width: 640px) { .hero-float-logo { display: none !important; } }
+    @media (max-width: 640px) {
+      /* !important because the element carries an inline display:grid */
+      .hero-float-logo { display: none !important; }
+      /* Shared stylesheet takes .grid-4 down to 2 columns at 1024px and no further, which
+         leaves the four build steps as unreadable slivers on a phone. Stack them. */
+      .grid-4 { grid-template-columns: 1fr; }
+      /* Shared stylesheet sets .btn{white-space:normal} under 640px, so this page's longer
+         CTA label breaks onto a second line. Hold it on one line and size it to fit 375px. */
+      .btn, .btn--lg { white-space: nowrap; font-size: 0.78rem; padding-left: 16px; padding-right: 16px; }
+    }
   </style>
 </head>
 <body>
