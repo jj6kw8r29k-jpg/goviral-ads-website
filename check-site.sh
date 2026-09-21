@@ -60,6 +60,7 @@ assigned = {"google-ads.html": "buildbraand/google-ad-audit",
             "google-ads-audit-leadgen.html": "buildbraand/google-ad-audit",
             "google-ads-partner.html": "buildbraand/goviral-ads-strategy-meet",
             "google-ads-peptide.html": "buildbraand/goviral-ads-strategy-meet",
+            "launch-your-peptide-business.html": "buildbraand/launch-pep-business",
             "meta-ads.html": "buildbraand/ads-strategy-call",
             "seo-autopilot.html": "buildbraand/goviral-ads-strategy-meet-clone"}
 default = "buildbraand/goviral-ads-strategy-meet"
@@ -79,7 +80,7 @@ for f in pages:
             warns.append(f"CALENDLY: {f} uses non-default link(s) {sorted(bad)}")
 
 # 6. Squeeze pages: no navigation, no lead forms
-for f in ["google-ads.html", "google-ads-audit-ecom.html", "google-ads-audit-leadgen.html", "google-ads-partner.html", "google-ads-peptide.html", "meta-ads.html", "seo-autopilot.html"]:
+for f in ["google-ads.html", "google-ads-audit-ecom.html", "google-ads-audit-leadgen.html", "google-ads-partner.html", "google-ads-peptide.html", "meta-ads.html", "seo-autopilot.html", "launch-your-peptide-business.html"]:
     s = open(f, encoding="utf-8").read()
     if re.search(r'<nav[\s>]', s):
         fails.append(f"SQUEEZE PURITY: {f} contains a <nav> element")

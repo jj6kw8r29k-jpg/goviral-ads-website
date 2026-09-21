@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>Launch Your Peptide Business. Website, Payment Gateway, Marketing. Done For You. | GoViral Ads</title>
+  <meta name="description" content="We've grown 25+ research peptide brands into six figures. WooCommerce store, high-risk payment gateway, vendor connections, and marketing that scales, without the restrictions. Done for you." />
+  <link rel="icon" type="image/png" href="assets/brand/arrow-black.png" />
+  <link rel="canonical" href="https://goviralads.agency/launch-your-peptide-business" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GoViral Ads" />
+  <meta property="og:title" content="Launch Your Peptide Business. Done For You." />
+  <meta property="og:description" content="We've grown 25+ research peptide brands into six figures. Website, high-risk payment gateway, vendor connections, and marketing that scales. Done for you." />
+  <meta property="og:url" content="https://goviralads.agency/launch-your-peptide-business" />
+  <meta property="og:image" content="https://goviralads.agency/assets/og/home.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Launch Your Peptide Business. Done For You." />
+  <meta name="twitter:description" content="We've grown 25+ research peptide brands into six figures. Website, high-risk payment gateway, vendor connections, and marketing that scales. Done for you." />
+  <meta name="twitter:image" content="https://goviralads.agency/assets/og/home.png" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "GoViral Ads", "url": "https://goviralads.agency/", "areaServed": {"@type": "Country", "name": "United States"}, "logo": "https://goviralads.agency/assets/brand/logo-black.webp"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Launch Your Peptide Business", "description": "Done-for-you research peptide business launch and growth. WooCommerce store build, high-risk payment gateway setup, optional vendor connections, and Google and Meta Ads management to scale toward six and seven figure revenue.", "url": "https://goviralads.agency/launch-your-peptide-business", "provider": {"@type": "Organization", "name": "GoViral Ads", "url": "https://goviralads.agency/"}, "areaServed": "Worldwide"}</script>
+  <style>
+    /* Page-scoped components, kept off the shared stylesheet so the other pages cannot regress. */
+    .promise-band { background: var(--ink); color: var(--paper); border-radius: var(--radius-lg); padding: clamp(32px, 5vw, 56px); text-align: center; }
+    .promise-band p.quote { font-family: var(--font-display); font-weight: 800; line-height: 1.3; font-size: clamp(1.2rem, 2.8vw, 1.85rem); letter-spacing: -0.01em; max-width: 880px; margin: 0 auto; }
+    /* Authority band, dark stat strip */
+    .authority { background: var(--ink); color: var(--paper); border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); }
+    .authority__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .authority__item { padding: 26px 18px; text-align: center; border-right: 1px solid rgba(244,244,242,0.18); }
+    .authority__item:last-child { border-right: 0; }
+    .authority__num { display: block; font-family: var(--font-mono); font-weight: 700; font-size: clamp(1.1rem, 2.4vw, 1.9rem); letter-spacing: -0.02em; line-height: 1.1; }
+    .authority__label { display: block; margin-top: 8px; font-family: var(--font-mono); font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(244,244,242,0.6); }
+    /* Hero proof card, dark, numbers above the receipt */
+    .proof-card { border: 1.5px solid var(--ink); border-radius: var(--radius-lg); box-shadow: 8px 8px 0 var(--ink); overflow: hidden; background: var(--ink); color: var(--paper); }
+    .proof-card__tag { padding: 14px 22px; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,244,242,0.72); border-bottom: 1px solid rgba(244,244,242,0.18); }
+    .proof-card__nums { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .proof-card__num { padding: 26px 18px; text-align: center; border-right: 1px solid rgba(244,244,242,0.18); }
+    .proof-card__num:last-child { border-right: 0; }
+    .proof-card__num b { display: block; font-family: var(--font-mono); font-weight: 700; font-size: clamp(1rem, 2.8vw, 1.85rem); letter-spacing: -0.02em; line-height: 1.1; }
+    .proof-card__num span { display: block; margin-top: 8px; font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(244,244,242,0.6); }
+    .proof-card__media { background: var(--white); border-top: 1.5px solid var(--ink); }
+    /* Proof wall: one full-width result at a time, image shown at its natural size, never cropped */
+    .proof-big { max-width: 900px; margin: 0 auto 40px; border: 1.5px solid var(--ink); border-radius: var(--radius-lg); overflow: hidden; background: var(--white); }
+    .proof-big__media { background: var(--paper); border-bottom: 1.5px solid var(--ink); }
+    .proof-big__media img { display: block; width: 100%; height: auto; }
+    .proof-big__body { padding: clamp(22px, 3vw, 32px) clamp(22px, 3.5vw, 34px) clamp(26px, 3.5vw, 36px); }
+    .proof-big__label { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey); }
+    .proof-big__nums { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 14px; font-family: var(--font-mono); font-weight: 700; letter-spacing: -0.02em; }
+    .proof-big__to { font-size: clamp(1.8rem, 4.6vw, 2.6rem); line-height: 1.05; }
+    .proof-big__sub { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--grey); }
+    .proof-big__note { margin-top: 14px; font-size: 1rem; color: var(--grey); line-height: 1.6; max-width: 700px; }
+    /* Comparison chart: going it alone vs with GoViral */
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 920px; margin: 0 auto; }
+    .compare__col { border: 1.5px solid var(--ink); border-radius: var(--radius-lg); padding: clamp(22px, 3vw, 30px); }
+    .compare__col--bad { background: var(--white); }
+    .compare__col--good { background: var(--ink); color: var(--paper); }
+    .compare__head { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.05rem, 2vw, 1.25rem); margin-bottom: 20px; }
+    .compare__row { display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; line-height: 1.55; margin-bottom: 16px; }
+    .compare__row:last-child { margin-bottom: 0; }
+    .compare__x, .compare__check { flex: none; font-size: 1.1rem; line-height: 1.3; }
+    @media (max-width: 700px) { .compare { grid-template-columns: 1fr; } }
+    /* Testimonial wall, CSS columns so uneven quotes balance. */
+    .tsl-wall { columns: 2; column-gap: 24px; max-width: 900px; margin: 0 auto; }
+    .tsl-wall > * { break-inside: avoid; -webkit-column-break-inside: avoid; margin-bottom: 24px; }
+    @media (max-width: 760px) { .tsl-wall { columns: 1; } }
+    .tsl__person--noface { padding-top: 18px; border-top: 1px dashed var(--line-strong); margin-top: auto; }
+    .tsl__stars { display: block; font-size: 0.95rem; letter-spacing: 2px; margin-bottom: 10px; }
+    @media (max-width: 760px) {
+      .authority__grid { grid-template-columns: repeat(2, 1fr); }
+      .authority__item:nth-child(-n+2) { border-bottom: 1px solid rgba(244,244,242,0.18); }
+      .authority__item:nth-child(2n) { border-right: 0; }
+    }
+    @media (max-width: 640px) {
+      .hero-float-logo { display: none !important; }
+      .grid-4 { grid-template-columns: 1fr; }
+      .btn, .btn--lg { white-space: nowrap; font-size: 0.78rem; padding-left: 16px; padding-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJRP59XG"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container">
+      <div style="display:flex; justify-content:center; align-items:center; height:76px;">
+        <a href="/" class="nav__logo" aria-label="GoViral Ads home">
+          <img src="assets/brand/logo-black.webp" alt="GoViral Ads" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero section" style="padding-top:clamp(32px,4.5vw,56px); padding-bottom:clamp(48px,6vw,80px);">
+      <div class="arrow-band" aria-hidden="true"></div>
+      <div class="container" style="text-align:center; position:relative;">
+        <div class="reveal">
+          <span class="tag tag--ink">🚀 Done For You · Website + Payments + Marketing</span>
+          <h1 class="display-xl" style="margin:24px auto 0; max-width:1000px; font-size:clamp(2rem,4.6vw,3.5rem);">We Launch Your Peptide Business. <span class="hl-under">Site, Payments, And Marketing</span>. All Of It.</h1>
+          <p class="lead" style="margin:22px auto 0; max-width:700px;">🛒 Website on the one platform that actually allows research peptide stores. 💳 A high-risk payment gateway so your funds don't sit in reserve. 🤝 Vendor connections if you need them. 📈 Then marketing that scales you toward six and seven figures, without the account getting shut down.</p>
+
+          <div style="margin-top:32px;">
+            <a href="https://calendly.com/buildbraand/launch-pep-business" target="_blank" rel="noopener" class="btn btn--ink btn--lg">Book My Peptide Launch Call <span class="arr">↗</span></a>
+          </div>
+          <p class="mono" style="margin-top:16px; font-size:0.78rem; color:var(--grey);">🔒 No price on this page. We'll map your exact investment on the call, once we know where you're starting from.</p>
+        </div>
+
+        <!-- HERO PROOF: strongest single number, real client, up front -->
+        <div class="reveal" style="max-width:900px; margin:48px auto 0; position:relative;">
+          <div class="proof-card" data-tilt="3">
+            <div class="proof-card__tag">🏆 Real peptide client · Lifetime store performance</div>
+            <div class="proof-card__nums">
+              <div class="proof-card__num"><b>$242,790.59</b><span>Lifetime Revenue</span></div>
+              <div class="proof-card__num"><b>1,499</b><span>Orders</span></div>
+              <div class="proof-card__num"><b>903</b><span>Unique Customers</span></div>
+            </div>
+            <div class="proof-card__media">
+              <img src="assets/case-studies/peptide-launch-242k-lifetime-revenue.png" alt="WooCommerce dashboard for a real peptide client: $242,790.59 lifetime revenue, 1,499 orders, 903 unique customers" />
+            </div>
+          </div>
+          <span class="hero__badge anim-pulse" style="top:-18px; right:14px;">BUILT FROM ZERO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AUTHORITY BAND ================= -->
+    <section class="authority">
+      <div class="container" style="padding-left:0; padding-right:0;">
+        <div class="authority__grid">
+          <div class="authority__item"><span class="authority__num">🚀 25+</span><span class="authority__label">Peptide Brands Grown Into Six Figures</span></div>
+          <div class="authority__item"><span class="authority__num">💰 $2M+/Mo</span><span class="authority__label">Peptide Ad Spend Managed</span></div>
+          <div class="authority__item"><span class="authority__num">🧩 3</span><span class="authority__label">Pillars: Site, Payments, Marketing</span></div>
+          <div class="authority__item"><span class="authority__num">👤 Founder</span><span class="authority__label">Runs Your Build. No Juniors.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROOF WALL: RESULTS UP FRONT ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">📊 Real Results, Up Front</span>
+          <h2 class="display-lg">We Build The Store. Here's What Happens After.</h2>
+          <p class="lead muted" style="margin-top:18px;">Six real research peptide clients. Different businesses, different stages. Every screenshot below is a live dashboard, nothing staged.</p>
+        </div>
+
+        <div class="proof-big reveal">
+          <div class="proof-big__media"><img src="assets/case-studies/peptide-launch-242k-lifetime-revenue.png" alt="WooCommerce dashboard: $242,790.59 lifetime revenue, 1,499 orders, 903 unique customers for a real peptide client" loading="lazy" /></div>
+          <div class="proof-big__body">
+            <span class="proof-big__label">🏆 Real Client · We Built Their Store</span>
+            <div class="proof-big__nums"><span class="proof-big__to">$242,790.59</span><span class="proof-big__sub">lifetime revenue · 1,499 orders · 903 customers</span></div>
+            <p class="proof-big__note">We built this client's WooCommerce store, connected their high-risk payment gateway, and ran the marketing from day one. This is what the store has done since. Never restricted, never shut down.</p>
+          </div>
+        </div>
+
+        <div class="proof-big reveal">
+          <div class="proof-big__media"><img src="assets/case-studies/peptide-launch-215k-ytd-from-zero.png" alt="WooCommerce analytics year to date: $215,247.85 net sales, up from zero the prior year, for a real peptide client" loading="lazy" /></div>
+          <div class="proof-big__body">
+            <span class="proof-big__label">📈 Real Client · Zero To Six Figures This Year</span>
+            <div class="proof-big__nums"><span class="proof-big__to">$215,247.85</span><span class="proof-big__sub">net sales, year to date</span></div>
+            <p class="proof-big__note">Same period last year, this business made zero dollars, because it didn't exist. We set up the store and the gateway at the start of this year. Year to date since: $215,247.85.</p>
+          </div>
+        </div>
+
+        <div class="proof-big reveal">
+          <div class="proof-big__media"><img src="assets/case-studies/peptide-launch-64k-quarter.png" alt="WooCommerce analytics for one quarter: $63,934.22 net sales, 296 orders, for a real peptide client" loading="lazy" /></div>
+          <div class="proof-big__body">
+            <span class="proof-big__label">🔁 Real Client · Still Growing, Every Quarter</span>
+            <div class="proof-big__nums"><span class="proof-big__to">$63,934.22</span><span class="proof-big__sub">net sales, one quarter · 296 orders</span></div>
+            <p class="proof-big__note">Not a launch-week spike. One full quarter of steady, repeat orders on a store we built and still manage.</p>
+          </div>
+        </div>
+
+        <div class="proof-big reveal">
+          <div class="proof-big__media"><img src="assets/case-studies/peptide-launch-54k-30day-live.png" alt="Live dashboard trailing 30 days: $54,051.57 revenue, 297 orders, for a real peptide client" loading="lazy" /></div>
+          <div class="proof-big__body">
+            <span class="proof-big__label">🟢 Real Client · Live Right Now</span>
+            <div class="proof-big__nums"><span class="proof-big__to">$54,051.57</span><span class="proof-big__sub">trailing 30 days · 297 orders</span></div>
+            <p class="proof-big__note">This is live, refreshed in real time, seconds before this screenshot was taken. The business is running today, not sitting in an old case study.</p>
+          </div>
+        </div>
+
+        <div class="proof-big reveal">
+          <div class="proof-big__media"><img src="assets/case-studies/peptide-launch-multichannel-orders.png" alt="Order list showing orders sourced from Google Ads, Meta, TikTok, Email, Organic Search, and Direct, for a real peptide client" loading="lazy" /></div>
+          <div class="proof-big__body">
+            <span class="proof-big__label">🌐 Real Client · Where The Orders Come From</span>
+            <div class="proof-big__nums"><span class="proof-big__to">6</span><span class="proof-big__sub">real order sources</span></div>
+            <p class="proof-big__note">Google Ads, Meta, TikTok, email, organic search, and direct, all converting on the same store. Demand for peptide products is real. It just needs a platform and a gateway that can actually take the order.</p>
+          </div>
+        </div>
+
+        <div class="proof-big reveal">
+          <div class="proof-big__media"><img src="assets/case-studies/peptide-launch-google-ads-14k-conv-value.png" alt="Google Ads account this month: $14,607.13 conversion value on $10,150.21 spend, 469 conversions, for a real peptide client" loading="lazy" /></div>
+          <div class="proof-big__body">
+            <span class="proof-big__label">🎯 Real Client · Google Ads, This Month</span>
+            <div class="proof-big__nums"><span class="proof-big__to">$14,607</span><span class="proof-big__sub">conv. value on $10,150 spend</span></div>
+            <p class="proof-big__note">469 conversions, 4.89% CTR, this month, running without a restriction, on an account we manage.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= WINS MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>💰 $242,790.59 lifetime revenue, one client</span><span>📊 $2M+/mo peptide ad spend managed</span><span>🚀 25+ peptide brands grown into six figures</span><span>📈 Zero to six figures, real dashboards</span><span>🧩 Site + payments + marketing, one team</span>
+        <span>💰 $242,790.59 lifetime revenue, one client</span><span>📊 $2M+/mo peptide ad spend managed</span><span>🚀 25+ peptide brands grown into six figures</span><span>📈 Zero to six figures, real dashboards</span><span>🧩 Site + payments + marketing, one team</span>
+      </div>
+    </div>
+
+    <!-- ================= WHO THIS IS FOR ================= -->
+    <section class="section" style="background:var(--white); border-top:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">🎯 Who This Is For</span>
+          <h2 class="display-lg">Starting From Zero, Or Already Selling. Both Work.</h2>
+          <p class="lead" style="margin-top:16px; max-width:760px; margin-left:auto; margin-right:auto;">Already have a vendor and selling to friends and family? Or haven't started at all? Either way, the same three things stop you: the platform, the payment gateway, and marketing that survives. We fix all three.</p>
+        </div>
+        <p class="mono" style="text-align:center; margin-top:8px; font-size:0.8rem; color:var(--grey);">Built for funded, ready-to-move operators. Not a course. Not a checklist.</p>
+      </div>
+    </section>
+
+    <!-- ================= COMPARISON: WHERE FOUNDERS FAIL ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">⚠️ Where This Actually Goes Wrong</span>
+          <h2 class="display-lg">Exactly Where Founders Fail. And What We Do Instead.</h2>
+        </div>
+        <div class="compare reveal-stagger">
+          <div class="compare__col compare__col--bad">
+            <span class="compare__head">😬 Going It Alone</span>
+            <div class="compare__row"><span class="compare__x">❌</span> Build on Shopify, get restricted or banned before the store even scales</div>
+            <div class="compare__row"><span class="compare__x">❌</span> A standard payment gateway flags you high-risk, holds funds in reserve</div>
+            <div class="compare__row"><span class="compare__x">❌</span> Ads get disapproved, then the account gets restricted or shut down</div>
+          </div>
+          <div class="compare__col compare__col--good">
+            <span class="compare__head">🚀 With GoViral</span>
+            <div class="compare__row"><span class="compare__check">✅</span> WooCommerce store built for this category from day one</div>
+            <div class="compare__row"><span class="compare__check">✅</span> High-risk payment gateway approved before your first order</div>
+            <div class="compare__row"><span class="compare__check">✅</span> Google and Meta managed to scale without tripping the wire</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THE BUILD ================= -->
+    <section class="section" style="background:var(--white); border-top:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">🛠️ The Full Build</span>
+          <h2 class="display-lg">Everything It Takes. We Handle All Of It.</h2>
+          <p class="lead muted" style="margin-top:18px;">Site and payments come first, so you're actually able to sell. Marketing runs continuously after that, so the business keeps growing.</p>
+        </div>
+        <div class="grid-4 reveal-stagger">
+          <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">🛒 01 · WooCommerce Build</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">A full research peptide store, built on the one platform that supports this category. Products, checkout, and the research-use language a payment processor and an ad platform both need to see.</p></div>
+          <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">💳 02 · High-Risk Payment Gateway</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">Approved and connected before you take your first order, so your revenue isn't sitting in a reserve account you can't touch.</p></div>
+          <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">🤝 03 · Vendor Connect (Optional)</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">If you don't already have a supplier, we can introduce you to the product vendors our other clients already use and trust.</p></div>
+          <div class="card"><span class="card__arrow">↗</span><h3 class="display-sm">📈 04 · Marketing That Scales</h3><p class="muted" style="margin-top:10px; font-size:0.95rem;">Google and Meta, run to get you to profitable unit economics, then run further to push toward six and seven figures. Continuous, not a one-time setup.</p></div>
+        </div>
+        <div class="reveal" style="text-align:center; margin-top:48px;">
+          <a href="https://calendly.com/buildbraand/launch-pep-business" target="_blank" rel="noopener" class="btn btn--ink btn--lg">Book My Peptide Launch Call <span class="arr">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUR PROMISE ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="promise-band reveal">
+          <span class="kicker kicker--light" style="justify-content:center; margin-bottom:18px;">🤝 Our Promise</span>
+          <p class="quote">We'll help selected founders build the infrastructure, payment setup, e-commerce foundation, and customer acquisition systems needed to launch and scale their research peptide business into six figures in the next six months.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section" style="background:var(--white); border-top:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">💬 In Their Words</span>
+          <h2 class="display-lg">What Clients Say.</h2>
+        </div>
+        <div class="tsl-wall reveal-stagger">
+          <div class="card tsl__card">
+            <span class="tsl__stars">⭐⭐⭐⭐⭐</span>
+            <p class="tsl__quote">They cleaned up our account and revived our ROAS from 2.2 to 3.9 in just 30 days. Akshat and his team are extremely responsive and communicative throughout the entire process.</p>
+            <div class="tsl__person--noface">
+              <div class="tsl__name">Serina Wills</div><div class="tsl__role">Peptide Brand Owner</div>
+            </div>
+          </div>
+          <div class="card tsl__card">
+            <span class="tsl__stars">⭐⭐⭐⭐⭐</span>
+            <p class="tsl__quote">We blew through three Google Ads accounts before GoViral. They got us running without getting restricted again, our PMax campaigns hit 3.5X ROAS, and we've done more than half a million dollars in revenue since.</p>
+            <div class="tsl__person--noface">
+              <div class="tsl__name">Cris Themme</div><div class="tsl__role">Peptide Brand Owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">❓ FAQ</span>
+          <h2 class="display-lg">"What Does This Actually Cost?" And More.</h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq__item">
+            <button class="faq__q">💵 What does this cost? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">It depends on where you're starting from and what's already built. We'll walk through the exact investment on the call, so you know the number before you commit to anything. Nothing here is priced to make you guess.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">🛒 Why can't I just build this on Shopify? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">Shopify and most major platforms restrict or ban research peptide stores. WooCommerce is self-hosted, so nobody can shut down your store the way a platform can shut down your account. It is the one stack actually built to hold this category.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">💳 What is a high-risk payment gateway, and why do I need one? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">A standard payment processor flags research peptide sales as high-risk and can restrict your account or hold your funds in reserve once volume picks up. A high-risk gateway is underwritten for this category from day one, so your revenue actually reaches you.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">🤝 I already have a vendor. Do I still need this? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">Yes, if you don't have a real store, a compliant payment gateway, and marketing that won't get restricted. Keep your vendor. We handle everything around it.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">🔗 Can you connect me with a product vendor? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">If you need one, yes. We can introduce you to product vendors our other clients already use and trust. It's optional, not a requirement.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">⏱️ How long until I'm live? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">The site and payment gateway come first, so you can actually take orders. Marketing starts once that foundation is in place. We give you a realistic timeline on the call once we know your starting point.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">🔄 What happens after the first few months? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">By then we'll have real data on what's working. Most clients continue with us on marketing once the numbers are proven. That's a conversation that happens naturally, not something you're locked into upfront.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">👤 Who actually runs my build? <span class="arr">→</span></button>
+            <div class="faq__a"><div class="faq__a-inner">Akshat, the founder, and the same team already running $2M+ a month in peptide ad spend. Not a junior, not an outsourced team you never meet.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOUNDER NOTE ================= -->
+    <section class="section" style="background:var(--white); border-top:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink);">
+      <div class="container">
+        <div class="reveal" style="max-width:720px; margin:0 auto; display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
+          <img src="assets/founder/akshat-singh.jpg" alt="Akshat Singh, Founder of GoViral Ads" loading="lazy" style="width:96px; height:96px; border-radius:50%; object-fit:cover; border:1.5px solid var(--ink); flex:none;" />
+          <div style="flex:1; min-width:280px;">
+            <p class="lead" style="font-weight:600;">"Most peptide sellers lose three months figuring out the platform and the payment gateway before they ever run a real ad. We already know which platform works, which gateway underwrites the peptide category, and how to market it without getting shut down. You skip straight to the part that grows the revenue."</p>
+            <p class="mono" style="margin-top:12px; font-size:0.8rem; font-weight:700;">Akshat Singh, Founder, GoViral Ads</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div class="cta-band__arrows" aria-hidden="true">↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗ ↗</div>
+          <span class="kicker kicker--light" style="justify-content:center;">✅ We Review Every Application</span>
+          <h2 class="display-lg" style="color:var(--paper); max-width:800px; margin:0 auto;">Launch And Scale Your Peptide Business. Done For You.</h2>
+          <p style="color:rgba(244,244,242,0.65); margin:20px auto 32px; max-width:620px;">
+            We only take on selected founders each month. Book a call, answer a few questions honestly, and we'll tell you exactly what it takes to get you live and growing.
+          </p>
+          <a href="https://calendly.com/buildbraand/launch-pep-business" target="_blank" rel="noopener" class="btn btn--lg">Book My Peptide Launch Call <span class="arr">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STICKY CTA ================= -->
+    <div class="sticky-cta"><a href="https://calendly.com/buildbraand/launch-pep-business" target="_blank" rel="noopener" class="btn btn--ink">Book My Peptide Launch Call ↗</a></div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__box">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/brand/logo-white.webp" alt="GoViral Ads" />
+          <p>We don't chase impressions. We engineer momentum. Growth × performance marketing for businesses that refuse to settle for average.</p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="google-ads">Google Ads Proof Program™</a></li>
+            <li><a href="meta-ads">Meta Growth Proof Program™</a></li>
+            <li><a href="seo-autopilot">SEO Autopilot™</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="growth-playbook">The Growth Playbook™</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy">Privacy Policy</a></li>
+            <li><a href="terms">Terms &amp; Conditions</a></li>
+            <li><a href="cookie-policy">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/go-viral-ads-agency/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.facebook.com/61578996099665/" target="_blank" rel="noopener">Facebook ↗</a></li>
+            <li><a href="https://www.instagram.com/goviral_ads_agency/?hl=en" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a href="https://www.youtube.com/@GoViralAdsAgency" target="_blank" rel="noopener">YouTube ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> GoViral Ads. All rights reserved.</span>
+        <span>Up and to the right. Always. ↗</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Tracking scripts: kept verbatim inside an inert <template>, activated on first interaction or after a 4s fallback, so they never block LCP/TBT. -->
+  <template id="deferred-trackers">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJRP59XG');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17583065677"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17583065677');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2188318194947797');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2188318194947797&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "rifvqmqves");
+  </script>
+  <!-- Snap Pixel Code -->
+  <script type='text/javascript'>
+  (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+  {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+  a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+  r.src=n;var u=t.getElementsByTagName(s)[0];
+  u.parentNode.insertBefore(r,u);})(window,document,
+  'https://sc-static.net/scevent.min.js');
+  snaptr('init', 'dcbebeec-9a31-4cf5-9ba7-018cde5ff673', {});
+  snaptr('track', 'PAGE_VIEW');
+  </script>
+  <!-- End Snap Pixel Code -->
+  <!-- Reddit Pixel -->
+  <script>
+  !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j6kvfm5qdek9",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j6kvfm5qdek9');rdt('track', 'PageVisit');
+  </script>
+  <!-- End Reddit Pixel -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMV365VRMY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZMV365VRMY');
+  </script>
+  </template>
+
+  <script>
+  (function () {
+    var loaded = false;
+    function loadTrackers() {
+      if (loaded) return;
+      loaded = true;
+      var tpl = document.getElementById('deferred-trackers');
+      if (!tpl) return;
+      var frag = tpl.content.cloneNode(true);
+      Array.prototype.forEach.call(frag.querySelectorAll('script'), function (oldScript) {
+        var newScript = document.createElement('script');
+        for (var i = 0; i < oldScript.attributes.length; i++) {
+          var attr = oldScript.attributes[i];
+          newScript.setAttribute(attr.name, attr.value);
+        }
+        newScript.textContent = oldScript.textContent;
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+      });
+      document.body.appendChild(frag);
+    }
+    ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (evt) {
+      window.addEventListener(evt, loadTrackers, { once: true, passive: true });
+    });
+    setTimeout(loadTrackers, 4000);
+  })();
+  </script>
+</body>
+</html>
