@@ -60,7 +60,7 @@ assigned = {"google-ads.html": "buildbraand/google-ad-audit",
             "google-ads-audit-leadgen.html": "buildbraand/google-ad-audit",
             "google-ads-partner.html": "buildbraand/goviral-ads-strategy-meet",
             "google-ads-peptide.html": "buildbraand/goviral-ads-strategy-meet",
-            "launch-your-peptide-business.html": "buildbraand/launch-pep-business",
+            "launch-your-peptide-business.html": "buildbraand/we-re-selecting-just-10-peptide-brands-to-launc-clone",
             "meta-ads.html": "buildbraand/ads-strategy-call",
             "seo-autopilot.html": "buildbraand/goviral-ads-strategy-meet-clone"}
 default = "buildbraand/goviral-ads-strategy-meet"
